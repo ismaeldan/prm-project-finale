@@ -129,7 +129,7 @@ export function Services() {
         </div>
 
         <div id="sublimacao" className={styles.service__item}>
-          <img alt="Imagem Sublimação" />
+          <img src={ImgSublimacao} alt="Imagem Sublimação" />
 
           <div className={styles.service__item__content__reverse}>
             <div className={styles.line}></div>
