@@ -1,4 +1,3 @@
-import ImgSublimacao from '../../../assets/SUBLIMACAO.jpg'
 import styles from './ServiceDetail.module.css'
 
 import WhatsApp from '../../../assets/whatsapp.svg'
