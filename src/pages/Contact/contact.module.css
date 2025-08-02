@@ -1,0 +1,183 @@
+.button {
+  width: 256px;
+  height: 50px;
+  background-color: #809dbf;
+  border-radius: 0.25rem;
+  border: none;
+  color: #f9f9f9;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  transition: background 0.3s;
+}
+
+.button:hover {
+  background: #617fbf;
+}
+
+/* CONTACT */
+
+.container__contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 8rem 0;
+  gap: 3rem;
+}
+
+.contact__text {
+  max-width: 25rem;
+
+  h2 {
+    margin-bottom: 1rem;
+  }
+
+  p {
+    margin-bottom: 2rem;
+  }
+
+  img {
+    height: 24px;
+  }
+}
+
+.contact__list {
+  display: grid;
+  gap: 1.5rem;
+  max-width: 45%;
+}
+
+ul li,
+ul li a {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #767676;
+}
+
+ul li img {
+  height: 24px;
+  width: 24px;
+  flex-shrink: 0;
+}
+
+.contact__links {
+  display: flex;
+  justify-content: center;
+}
+
+.mapa-responsivo {
+  overflow: hidden;
+  padding-bottom: 56.25%; /* Proporção 16:9 (para outras proporções, ajuste este valor ) */
+  position: relative;
+  height: 0;
+}
+
+.mapa-responsivo iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+iframe {
+  border: none;
+  width: 1080px;
+  height: 600px;
+}
+
+/* === Media Queries === */
+
+/* Medium devices (tablets, 992px and down) */
+@media (max-width: 1025px) {
+  iframe {
+    border: none;
+    width: 980px;
+    height: 600px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .container__contact {
+    padding: 6rem 0;
+  }
+
+  iframe {
+    border: none;
+    width: 980px;
+    height: 600px;
+  }
+}
+
+/* Small devices (landscape phones, 768px and down) */
+@media (max-width: 768px) {
+  .container__contact {
+    flex-direction: column;
+    padding: 4rem 0;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  ul li {
+    justify-content: center;
+  }
+
+  .contact__text {
+    max-width: 95%;
+    margin: 0;
+  }
+
+  .contact__list {
+    max-width: 100%;
+    gap: 1rem;
+  }
+
+  iframe {
+    border: none;
+    width: 740px;
+    height: 500px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .service__item {
+    gap: 0;
+    margin-bottom: 0;
+  }
+
+  h2,
+  p {
+    margin-bottom: 1rem;
+  }
+
+  iframe {
+    border: none;
+    width: 400px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 375px) {
+  iframe {
+    border: none;
+    width: 350px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 320px) {
+  iframe {
+    border: none;
+    width: 300px;
+    height: 300px;
+  }
+}
