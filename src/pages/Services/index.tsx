@@ -2,7 +2,7 @@ import styles from './services.module.css'
 import ImgBaixoRelevo from '../../assets/BAIXO RELEVO.jpg'
 import ImgDTF from '../../assets/DTF.png'
 import ImgLaser from '../../assets/LASER.jpg'
-import ImgSublimacao from '../../assets/SUBLIMACAO.jpg'
+
 import ImgSilk from '../../assets/SILK.jpg'
 import ImgTampografia from '../../assets/TAMPOGRAFIA.jpg'
 import ImgTransfer from '../../assets/TRANSFER.jpg'
@@ -129,7 +129,7 @@ export function Services() {
         </div>
 
         <div id="sublimacao" className={styles.service__item}>
-          <img src={ImgSublimacao} alt="Imagem Sublimação" />
+          <img alt="Imagem Sublimação" />
 
           <div className={styles.service__item__content__reverse}>
             <div className={styles.line}></div>
