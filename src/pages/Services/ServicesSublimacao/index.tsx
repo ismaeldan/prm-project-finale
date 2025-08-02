@@ -13,7 +13,7 @@ export function Sublimacao() {
   return (
     <main className={styles.main}>
       <div className={`${styles.service__item} container`}>
-        <img src={ImgSublimacao} alt="Imagem Sublimacao" />
+        <img src={ImgSublimacao} alt="" />
 
         <div id="sublimacao" className={styles.service__item__content}>
           <div className={styles.line}></div>
