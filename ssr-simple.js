@@ -5,7 +5,6 @@ import { fileURLToPath } from 'url'
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 
-// Funções definidas ANTES de serem usadas
 function generateHomeContent() {
   return `
     <div id="root">
@@ -798,7 +797,7 @@ function generateServiceBaixoRelevoContent() {
         />
         <div id="baixo_relevo" class="_service__item__content_1gmim_18">
           <div class="_line_1gmim_24"></div>
-          <h2>Baixo Relevo</h2>
+          <h1>Baixo Relevo</h1>
           <p>
             A gravação em baixo relevo é um processo que cria marcas ou desenhos
             em uma superfície, removendo uma fina camada do material para formar
@@ -954,7 +953,7 @@ function generateServiceDTFContent() {
         <img alt="Imagem DTF" src="/assets/DTF-DaP70Bzb.png" />
         <div id="baixo_relevo" class="_service__item__content_1gmim_18">
           <div class="_line_1gmim_24"></div>
-          <h2>DTF</h2>
+          <h1>DTF</h1>
           <p>
             A técnica DTF (Direct to Film) com adesivo é um método de
             personalização gráfica que imprime imagens em alta definição em um
@@ -1112,7 +1111,7 @@ function generateServiceLaserContent() {
         <img alt="Imagem laser" src="/assets/LASER-HmNWMDNR.jpg" />
         <div id="laser" class="_service__item__content_1gmim_18">
           <div class="_line_1gmim_24"></div>
-          <h2>Laser</h2>
+          <h1>Laser</h1>
           <p>
             A gravação a laser é um processo de marcação de alta precisão que
             utiliza um feixe de laser para corrosão da superfície de um
@@ -1265,7 +1264,7 @@ function generateServiceTransferContent() {
         <img alt="Imagem laser" src="/assets/TRANSFER-BjNMpsCD.jpg" />
         <div id="digital" class="_service__item__content_1pngg_18">
           <div class="_line_1pngg_24"></div>
-          <h2>Transfer</h2>
+          <h1>Transfer</h1>
           <p>
             O design é impresso em um papel especial que posteriormente, é
             transferido para o brinde por meio de calor e pressão. Essa técnica
@@ -1418,7 +1417,7 @@ function generateServiceDigitalContent() {
         <img alt="Imagem laser" src="/assets/DIGITAL-B-SMcLTp.jpg" />
         <div id="digital" class="_service__item__content_1gmim_18">
           <div class="_line_1gmim_24"></div>
-          <h2>Gravação Digital UV</h2>
+          <h1>Gravação Digital UV</h1>
           <p>
             A gravação digital UV é um processo de impressão direta que utiliza
             tintas especiais curadas por luz ultravioleta, resultando em
@@ -1576,7 +1575,7 @@ function generateServiceDigital360Content() {
         />
         <div id="digital360" class="_service__item__content_1gmim_18">
           <div class="_line_1gmim_24"></div>
-          <h2>Gravação Digital UV 360</h2>
+          <h1>Gravação Digital UV 360</h1>
           <p>
             A gravação digital UV 360 é uma evolução da impressão UV
             tradicional, focada na personalização completa de objetos
@@ -1732,7 +1731,7 @@ function generateServiceSilkContent() {
         <img alt="Imagem Silk" src="/assets/SILK-BRNY2Obw.jpg" />
         <div id="silk" class="_service__item__content_1gmim_18">
           <div class="_line_1gmim_24"></div>
-          <h2>Silk Screen</h2>
+          <h1>Silk Screen</h1>
           <p>
             Um método tradicional e altamente eficaz. Neste processo, a tinta é
             pressionada através de uma tela esticada sobre o objeto, criando um
@@ -1888,7 +1887,7 @@ function generateServiceSublimacaoContent() {
         />
         <div id="sublimacao" class="_service__item__content_1gmim_18">
           <div class="_line_1gmim_24"></div>
-          <h2>Sublimação</h2>
+          <h1>Sublimação</h1>
           <p>
             Se trata de um processo de transferência de gravação de uma
             superfície para outra, resultando em uma impressão de alta
@@ -2041,7 +2040,7 @@ function generateServiceTampografiaContent() {
         <img alt="Imagem Tampografia" src="/assets/TAMPOGRAFIA-qYbr5PbQ.jpg" />
         <div id="tampografia" class="_service__item__content_1gmim_18">
           <div class="_line_1gmim_24"></div>
-          <h2>Tampografia</h2>
+          <h1>Tampografia</h1>
           <p>
             A tinta é transferida de um clichê para o produto através de um
             tampão de silicone, resultando em detalhes nítidos mesmo em
@@ -2430,7 +2429,6 @@ function generateContactContent() {
   `
 }
 
-// Rotas para pré-renderizar
 const routes = [
   {
     path: '/',

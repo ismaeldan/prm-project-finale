@@ -1,35 +1,35 @@
 main {
-  padding-top: 8rem
+  padding-top: 4rem !important;
 }
 
 .service__item {
-    display: flex;
-    gap: 3rem;
-    margin-bottom: 5rem;
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 5rem;
 }
 
 .service__item img {
-    max-width: 45%;
-    height: auto;
-    flex-shrink: 0;
-    border-radius: 0.25rem; 
+  max-width: 45%;
+  height: auto;
+  flex-shrink: 0;
+  border-radius: 0.25rem;
 }
 
 .service__item__content,
 .service__item__content__reverse {
-    display: grid;
-    align-content: space-between;
+  display: grid;
+  align-content: space-between;
 }
 
 .line {
-    height: 1px;
-    background: #e4e4e4;
-    border: none;
+  height: 1px;
+  background: #e4e4e4;
+  border: none;
 }
 
 .centerButton {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 /* CONTACT */
@@ -65,41 +65,42 @@ main {
   max-width: 45%;
 }
 
-ul li, ul li a {
+ul li,
+ul li a {
   display: flex;
   align-items: center;
-  gap:  0.75rem;
-  font-family: "DM Sans", sans-serif;
+  gap: 0.75rem;
+  font-family: 'DM Sans', sans-serif;
   font-size: 1rem;
   font-weight: 400;
-  color: #767676; 
+  color: #767676;
 }
 
 ul li img {
-    height: 24px;
-    width: 24px;
-    flex-shrink: 0; 
+  height: 24px;
+  width: 24px;
+  flex-shrink: 0;
 }
 
 .button {
   width: 256px;
   height: 50px;
-  background-color: #809DBF;
+  background-color: #809dbf;
   border-radius: 0.25rem;
   border: none;
-  color: #F9F9F9;
+  color: #f9f9f9;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 0.625rem;
-  font-family: "DM Sans", sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: 16px;
   font-weight: 400;
   transition: background 0.3s;
 }
 
 .button:hover {
-  background: #617FBF;
+  background: #617fbf;
 }
 
 /* === Media Queries === */
@@ -110,24 +111,23 @@ ul li img {
     padding: 6rem 0;
   }
 
-    .services {
-        padding: 4rem 0;
-    }
-    .service__item {
-        gap: 2rem;
-        margin-bottom: 4rem;
-    }
-    .service__item img {
-        max-width: 40%;
-    }
-    .line {
-        margin: 4rem 0;
-    }
+  .services {
+    padding: 4rem 0;
+  }
+  .service__item {
+    gap: 2rem;
+    margin-bottom: 4rem;
+  }
+  .service__item img {
+    max-width: 40%;
+  }
+  .line {
+    margin: 4rem 0;
+  }
 }
 
 /* Small devices (landscape phones, 768px and down) */
 @media (max-width: 768px) {
-
   .container__contact {
     flex-direction: column;
     padding: 4rem 0;
@@ -136,65 +136,66 @@ ul li img {
   }
 
   ul li {
-      justify-content: center;
+    justify-content: center;
   }
 
-  .contact__text{
+  .contact__text {
     max-width: 95%;
     margin: 0;
   }
 
   .contact__list {
-      max-width: 100%;
-      gap: 1rem;
+    max-width: 100%;
+    gap: 1rem;
   }
-    .services {
-        padding: 3rem 0;
-    }
-    .service__item {
-        flex-direction: column;
-        gap: 1.5rem;
-        margin-bottom: 3rem;
-        text-align: center;
-    }
+  .services {
+    padding: 3rem 0;
+  }
+  .service__item {
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
 
-    .service__item:nth-child(even) .service__item__content {
-        order: 1;
-    }
-     .service__item:nth-child(even) img {
-        order: 2;
-    }
-     .service__item:nth-child(odd) .service__item__content__reverse {
-        order: 1;
-    }
-     .service__item:nth-child(odd) img {
-        order: 2;
-    }
+  .service__item:nth-child(even) .service__item__content {
+    order: 1;
+  }
+  .service__item:nth-child(even) img {
+    order: 2;
+  }
+  .service__item:nth-child(odd) .service__item__content__reverse {
+    order: 1;
+  }
+  .service__item:nth-child(odd) img {
+    order: 2;
+  }
 
-    .service__item img {
-        max-width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-    }
+  .service__item img {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-    .service__item__content,
-    .service__item__content__reverse {
-        width: 100%;
-        order: 2;
-    }
+  .service__item__content,
+  .service__item__content__reverse {
+    width: 100%;
+    order: 2;
+  }
 
-    .line {
-        margin: 3rem 0;
-    }
+  .line {
+    margin: 3rem 0;
+  }
 }
 
 @media (max-width: 575.98px) {
-  .service__item{
+  .service__item {
     gap: 0;
     margin-bottom: 0;
   }
 
-  h2, p{
+  h2,
+  p {
     margin-bottom: 1rem;
   }
 }

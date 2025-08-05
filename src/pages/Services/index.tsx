@@ -42,9 +42,9 @@ export function Services() {
             </p>
 
             <div className={styles.centerButton}>
-              <Link className={styles.button} to="/gravacao-em-baixo-relevo">
+              <a className={styles.button} href="/gravacao-em-baixo-relevo">
                 Conheça mais
-              </Link>
+              </a>
             </div>
             <div className={styles.line}></div>
           </div>
@@ -68,9 +68,9 @@ export function Services() {
             </p>
 
             <div className={styles.centerButton}>
-              <Link className={styles.button} to="/dtf">
+              <a className={styles.button} href="/dtf">
                 Conheça mais
-              </Link>
+              </a>
             </div>
 
             <div className={styles.line}></div>
@@ -95,9 +95,9 @@ export function Services() {
             </p>
 
             <div className={styles.centerButton}>
-              <Link className={styles.button} to="/gravacao-a-laser">
+              <a className={styles.button} href="/gravacao-a-laser">
                 Conheça mais
-              </Link>
+              </a>
             </div>
 
             <div className={styles.line}></div>
@@ -117,9 +117,9 @@ export function Services() {
             </p>
 
             <div className={styles.centerButton}>
-              <Link className={styles.button} to="/silk">
+              <a className={styles.button} href="/silk">
                 Conheça mais
-              </Link>
+              </a>
             </div>
 
             <div className={styles.line}></div>
@@ -143,9 +143,9 @@ export function Services() {
             </p>
 
             <div className={styles.centerButton}>
-              <Link className={styles.button} to="/sublimacao">
+              <a className={styles.button} href="/sublimacao">
                 Conheça mais
-              </Link>
+              </a>
             </div>
 
             <div className={styles.line}></div>
@@ -166,9 +166,9 @@ export function Services() {
             </p>
 
             <div className={styles.centerButton}>
-              <Link className={styles.button} to="/tampografia">
+              <a className={styles.button} href="/tampografia">
                 Conheça mais
-              </Link>
+              </a>
             </div>
 
             <div className={styles.line}></div>
@@ -192,9 +192,9 @@ export function Services() {
             </p>
 
             <div className={styles.centerButton}>
-              <Link className={styles.button} to="/transfer">
+              <a className={styles.button} href="/transfer">
                 Conheça mais
-              </Link>
+              </a>
             </div>
 
             <div className={styles.line}></div>
@@ -216,9 +216,9 @@ export function Services() {
             </p>
 
             <div className={styles.centerButton}>
-              <Link className={styles.button} to="/digital">
+              <a className={styles.button} href="/digital">
                 Conheça mais
-              </Link>
+              </a>
             </div>
 
             <div className={styles.line}></div>
@@ -246,9 +246,9 @@ export function Services() {
             </p>
 
             <div className={styles.centerButton}>
-              <Link className={styles.button} to="/digital360">
+              <a className={styles.button} href="/digital360">
                 Conheça mais
-              </Link>
+              </a>
             </div>
 
             <div className={styles.line}></div>

@@ -18,7 +18,7 @@ export function Silk() {
 
         <div id="silk" className={styles.service__item__content}>
           <div className={styles.line}></div>
-          <h2>Silk Screen</h2>
+          <h1>Silk Screen</h1>
           <p>
             Um método tradicional e altamente eficaz. Neste processo, a tinta é
             pressionada através de uma tela esticada sobre o objeto, criando um

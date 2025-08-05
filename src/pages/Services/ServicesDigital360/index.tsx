@@ -18,7 +18,7 @@ export function Digital360() {
 
         <div id="digital360" className={styles.service__item__content}>
           <div className={styles.line}></div>
-          <h2>Gravação Digital UV 360</h2>
+          <h1>Gravação Digital UV 360</h1>
           <p>
             A gravação digital UV 360 é uma evolução da impressão UV
             tradicional, focada na personalização completa de objetos

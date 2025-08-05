@@ -18,7 +18,7 @@ export function Sublimacao() {
 
         <div id="sublimacao" className={styles.service__item__content}>
           <div className={styles.line}></div>
-          <h2>Sublimação</h2>
+          <h1>Sublimação</h1>
           <p>
             Se trata de um processo de transferência de gravação de uma
             superfície para outra, resultando em uma impressão de alta

@@ -18,7 +18,7 @@ export function Transfer() {
 
         <div id="digital" className={styles.service__item__content}>
           <div className={styles.line}></div>
-          <h2>Transfer</h2>
+          <h1>Transfer</h1>
           <p>
             O design é impresso em um papel especial que posteriormente, é
             transferido para o brinde por meio de calor e pressão. Essa técnica

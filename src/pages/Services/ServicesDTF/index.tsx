@@ -48,7 +48,7 @@ export function DTF() {
       <section id="contact">
         <div className={`${styles.container__contact} container`}>
           <div className={styles.contact__text}>
-            <h2>Entre em Contato</h2>
+            <h1>Entre em Contato</h1>
             <p>
               Entre em contato com a PRM TecPrint, queremos tirar suas dúvidas.
             </p>

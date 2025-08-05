@@ -18,7 +18,7 @@ export function Tampografia() {
 
         <div id="tampografia" className={styles.service__item__content}>
           <div className={styles.line}></div>
-          <h2>Tampografia</h2>
+          <h1>Tampografia</h1>
           <p>
             A tinta é transferida de um clichê para o produto através de um
             tampão de silicone, resultando em detalhes nítidos mesmo em
