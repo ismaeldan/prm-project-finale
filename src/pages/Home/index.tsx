@@ -6,63 +6,12 @@ import WhatsApp from '../../assets/whatsapp.svg'
 import Map_Icon from '../../assets/map.svg'
 import Email_Icon from '../../assets/email.svg'
 import Phone_Icon from '../../assets/phone.svg'
-import { useState, useEffect, useRef } from 'react'
 import { HashLink as Link } from 'react-router-hash-link'
 import ImgPresentation from '../../assets/APRESENTACAO.webp'
 import { useDocumentTitle } from '../../hooks/useDocumentTitle'
 
-type SectionRefs = {
-  [key: string]: React.RefObject<HTMLElement | null>
-}
-
 export function Home() {
   useDocumentTitle('Home')
-
-  const [activeLink, setActiveLink] = useState<string>('')
-  const sectionsRef: SectionRefs = {
-    home: useRef<HTMLElement | null>(null),
-    about: useRef<HTMLElement | null>(null),
-    services: useRef<HTMLElement | null>(null),
-    prw_embalagens: useRef<HTMLElement | null>(null),
-    contact: useRef<HTMLElement | null>(null)
-  }
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      entries => {
-        entries.forEach(entry => {
-          const sectionId = entry.target.id
-          if (entry.isIntersecting) {
-            setActiveLink(sectionId)
-            if (window.location.hash !== `#${sectionId}`) {
-              window.history.pushState(null, '', `#${sectionId}`)
-            }
-          } else if (activeLink === sectionId) {
-            setActiveLink('')
-            if (window.location.hash === `#${sectionId}`) {
-              window.history.pushState(null, '', ' ')
-            }
-          }
-        })
-      },
-      { threshold: 0.5 }
-    )
-
-    Object.values(sectionsRef).forEach(ref => {
-      if (ref.current) {
-        observer.observe(ref.current)
-      }
-    })
-
-    return () => {
-      Object.values(sectionsRef).forEach(ref => {
-        if (ref.current) {
-          observer.unobserve(ref.current)
-        }
-      })
-      observer.disconnect()
-    }
-  }, [activeLink])
 
   return (
     <main>
