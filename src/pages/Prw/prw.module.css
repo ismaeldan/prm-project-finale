@@ -1,4 +1,4 @@
-main {
+.main__PRW {
   padding-top: 0 !important;
 }
 
@@ -21,7 +21,7 @@ main {
   transition: background 0.3s;
 }
 
-.main__PRW {
+.section__PRW {
   background-color: #ececec;
   padding: 6rem 0;
 }

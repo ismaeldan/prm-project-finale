@@ -7,16 +7,12 @@ import { HashLink as Link } from 'react-router-hash-link'
 import { useDocumentTitle } from '../../hooks/useDocumentTitle'
 import PRW_Logo from '../../assets/LOGO PRW.svg'
 
-
 export function PRW() {
   useDocumentTitle('PRW Embalagens')
 
   return (
-    <main>
-      <section
-        className={styles.main__PRW}
-        id="prw_embalagens"
-      >
+    <main className={styles.main__PRW}>
+      <section className={styles.section__PRW} id="prw_embalagens">
         <div className={`${styles.container__prw} container`}>
           <div className={styles.image__prw}>
             <img src={PRW_Logo} alt="Logo da PRW" />
