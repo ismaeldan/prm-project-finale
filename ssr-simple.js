@@ -2379,6 +2379,43 @@ function generateContactContent() {
   `
 }
 
+function generateNotFoundContent() {
+  return `<div id="root">
+  <div
+    style="
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      min-height: 60vh;
+      padding: 2rem;
+      font-family: sans-serif;
+    "
+  >
+    <h1 style="font-size: 6rem; color: #809dbf; margin: 0">404</h1>
+    <h2 style="font-size: 2rem; margin: 1rem 0">Página Não Encontrada</h2>
+    <p style="margin-bottom: 2rem; max-width: 400px">
+      A página que você está procurando não existe ou foi movida.
+    </p>
+    <a
+      href="/"
+      style="
+        display: inline-block;
+        padding: 0.8rem 1.5rem;
+        background-color: #809dbf;
+        color: #f9f9f9;
+        border-radius: 0.25rem;
+        text-decoration: none;
+        font-weight: 700;
+      "
+    >
+      Voltar para a Home
+    </a>
+  </div>
+</div>`
+}
+
 const routes = [
   {
     path: '/',
@@ -2504,6 +2541,12 @@ const routes = [
     description:
       'Entre em contato com a PRM TECPRINT. Tire suas dúvidas e solicite orçamentos. Estamos prontos para atender você.',
     content: generateContactContent()
+  },
+  {
+    path: '/404',
+    title: 'Página Não Encontrada - PRM Gravações',
+    description: 'A página que você está procurando não existe.',
+    content: generateNotFoundContent()
   }
 ]
 
@@ -2581,19 +2624,42 @@ function createPrerenderedHTML(route) {
 }
 
 // Gera HTML para cada rota
+// for (const route of routes) {
+//   try {
+//     console.log(`🔄 Pré-renderizando: ${route.path}...`)
+
+//     // Cria o HTML completo
+//     const html = createPrerenderedHTML(route)
+
+//     // Cria diretório se necessário
+//     if (route.path !== '/') {
+//       // Cria um arquivo como /dist/sobre.html, /dist/servicos.html, etc.
+//       fs.writeFileSync(path.join(distPath, `${route.path}.html`), html)
+//     } else {
+//       // A página inicial continua sendo /dist/index.html
+//       fs.writeFileSync(indexPath, html)
+//     }
+
+//     console.log(`✅ Pré-renderizado: ${route.path}`)
+//   } catch (error) {
+//     console.error(`❌ Erro ao pré-renderizar ${route.path}:`, error.message)
+//   }
+// }
+
 for (const route of routes) {
   try {
     console.log(`🔄 Pré-renderizando: ${route.path}...`)
-
-    // Cria o HTML completo
     const html = createPrerenderedHTML(route)
 
-    // Cria diretório se necessário
-    if (route.path !== '/') {
-      // Cria um arquivo como /dist/sobre.html, /dist/servicos.html, etc.
+    // LÓGICA MODIFICADA
+    if (route.path === '/404') {
+      // Se for a rota 404, salve como 404.html
+      fs.writeFileSync(path.join(distPath, '404.html'), html)
+    } else if (route.path !== '/') {
+      // Para outras rotas, crie o .html
       fs.writeFileSync(path.join(distPath, `${route.path}.html`), html)
     } else {
-      // A página inicial continua sendo /dist/index.html
+      // Para a home, atualize o index.html
       fs.writeFileSync(indexPath, html)
     }
 

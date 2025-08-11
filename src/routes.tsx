@@ -15,6 +15,7 @@ import { Tampografia } from './pages/Services/ServicesTampografia'
 import { PRW } from './pages/Prw'
 import { Contato } from './pages/Contact'
 import { ScrollToTop } from './components/ScrollToTop'
+import { NotFound } from './pages/NotFound'
 
 export function MainRoutes() {
   return (
@@ -36,6 +37,7 @@ export function MainRoutes() {
           <Route path="/tampografia" element={<Tampografia />} />
           <Route path="/prw" element={<PRW />} />
           <Route path="/fale-conosco" element={<Contato />} />
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </>
