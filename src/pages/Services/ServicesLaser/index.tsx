@@ -18,7 +18,7 @@ export function Laser() {
 
         <div id="laser" className={styles.service__item__content}>
           <div className={styles.line}></div>
-          <h1>Laser</h1>
+          <h1>Gravação a Laser</h1>
           <p>
             A gravação a laser é um processo de marcação de alta precisão que
             utiliza um feixe de laser para corrosão da superfície de um

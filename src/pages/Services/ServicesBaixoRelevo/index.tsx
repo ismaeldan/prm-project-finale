@@ -18,7 +18,7 @@ export function BaixoRelevo() {
 
         <div id="baixo_relevo" className={styles.service__item__content}>
           <div className={styles.line}></div>
-          <h1>Baixo Relevo</h1>
+          <h1>Gravação em Baixo Relevo</h1>
           <p>
             A gravação em baixo relevo é um processo que cria marcas ou desenhos
             em uma superfície, removendo uma fina camada do material para formar
