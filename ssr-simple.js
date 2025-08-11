@@ -2447,7 +2447,7 @@ const routes = [
     description:
       'Impressão digital de alta qualidade para diversos materiais. Cores vibrantes e definição perfeita em todos os projetos.',
     content: generateServiceDigitalContent(
-      'Impressão Digital',
+      'Digital UV',
       'Impressão digital de alta qualidade para diversos materiais. Cores vibrantes e definição perfeita em todos os projetos.'
     )
   },
@@ -2457,7 +2457,7 @@ const routes = [
     description:
       'Impressão digital 360° para personalização completa de produtos cilíndricos. Tecnologia inovadora e resultados excepcionais.',
     content: generateServiceDigital360Content(
-      'Digital 360°',
+      'Digital UV 360°',
       'Impressão digital 360° para personalização completa de produtos cilíndricos. Tecnologia inovadora e resultados excepcionais.'
     )
   },
