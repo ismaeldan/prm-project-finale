@@ -2655,15 +2655,6 @@ for (const route of routes) {
   }
 }
 
-// Cria arquivo _redirects para Cloudflare Pages
-try {
-  const redirectsContent = `/*    /index.html   200`
-  fs.writeFileSync(path.join(distPath, '_redirects'), redirectsContent)
-  console.log('✅ Arquivo _redirects criado para Cloudflare Pages')
-} catch (error) {
-  console.error('❌ Erro ao criar _redirects:', error.message)
-}
-
 console.log('🎉 Pré-renderização SSR completa concluída com sucesso!')
 console.log(
   '📁 Cada página agora tem HTML completo com todo o conteúdo renderizado!'
