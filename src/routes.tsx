@@ -29,8 +29,8 @@ export function MainRoutes() {
           <Route path="/dtf" element={<DTF />} />
           <Route path="/gravacao-a-laser" element={<Laser />} />
           <Route path="/transfer" element={<Transfer />} />
-          <Route path="/digital" element={<Digital />} />
-          <Route path="/digital360" element={<Digital360 />} />
+          <Route path="/gravacao-digital-uv" element={<Digital />} />
+          <Route path="/gravacao-digital-uv-360" element={<Digital360 />} />
           <Route path="/silk" element={<Silk />} />
           <Route path="/sublimacao" element={<Sublimacao />} />
           <Route path="/tampografia" element={<Tampografia />} />

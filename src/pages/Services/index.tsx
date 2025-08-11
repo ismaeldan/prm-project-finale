@@ -216,7 +216,7 @@ export function Services() {
             </p>
 
             <div className={styles.centerButton}>
-              <Link className={styles.button} to="/digital">
+              <Link className={styles.button} to="/gravacao-digital-uv">
                 Conheça mais
               </Link>
             </div>
@@ -246,7 +246,7 @@ export function Services() {
             </p>
 
             <div className={styles.centerButton}>
-              <Link className={styles.button} to="/digital360">
+              <Link className={styles.button} to="/gravacao-digital-uv-360">
                 Conheça mais
               </Link>
             </div>
