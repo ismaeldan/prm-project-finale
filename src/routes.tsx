@@ -14,12 +14,12 @@ import { Sublimacao } from './pages/Services/ServicesSublimacao'
 import { Tampografia } from './pages/Services/ServicesTampografia'
 import { PRW } from './pages/Prw'
 import { Contato } from './pages/Contact'
-// import { TrailingSlashRedirect } from './components/TrailingSlashRedirect'
+import { ScrollToTop } from './components/ScrollToTop'
 
 export function MainRoutes() {
   return (
     <>
-      {/* <TrailingSlashRedirect /> */}
+      <ScrollToTop />
       <Routes>
         <Route element={<LayoutWithHeader />}>
           <Route path="/" element={<Home />} />
