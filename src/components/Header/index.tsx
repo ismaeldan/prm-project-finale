@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react'
 import { useLocation } from 'react-router-dom'
 import styles from './header.module.css'
 import logoColor from '../../assets/LOGOS PRM color.png'
+import { Link } from 'react-router-dom'
 
 // Simple Hamburger Icon SVG
 const HamburgerIcon = () => (
@@ -138,46 +139,46 @@ export function Header() {
     <header id="header" ref={headerRef} className={headerClass}>
       <nav className={`${styles.header} container`}>
         {/* Logo */}
-        <a href="/">
+        <Link to="/">
           <img className={styles.logo} src={logoColor} alt="PRM TECPRINT" />
-        </a>
+        </Link>
 
         {/* Desktop Menu */}
         <div className={styles.menu}>
-          <a
+          <Link
             className={`${isLinkActive('home') ? styles.active : ''}`}
-            href="/"
+            to="/"
           >
             Home
-          </a>
-          <a
+          </Link>
+          <Link
             className={`${
               isLinkActive('sobre', '/sobre') ? styles.active : ''
             }`}
-            href="/sobre"
+            to="/sobre"
           >
             Sobre
-          </a>
-          <a
+          </Link>
+          <Link
             className={`${
               isLinkActive('servicos', '/servicos') ? styles.active : ''
             }`}
-            href="/servicos"
+            to="/servicos"
           >
             Serviços
-          </a>
-          <a
+          </Link>
+          <Link
             className={`${isLinkActive('prw', '/prw') ? styles.active : ''}`}
-            href="/prw"
+            to="/prw"
           >
             PRW Embalagens
-          </a>
-          <a
+          </Link>
+          <Link
             className={`${isLinkActive('contact') ? styles.active : ''}`}
-            href="/fale-conosco"
+            to="/fale-conosco"
           >
             Contato
-          </a>
+          </Link>
         </div>
 
         {/* Mobile Menu Toggle Button */}
@@ -191,40 +192,40 @@ export function Header() {
 
         {/* Mobile Menu Container */}
         <div className={mobileMenuClass}>
-          <a
+          <Link
             className={`${isLinkActive('home') ? styles.active : ''}`}
-            href="/"
+            to="/"
           >
             Home
-          </a>
-          <a
+          </Link>
+          <Link
             className={`${
               isLinkActive('sobre', '/sobre') ? styles.active : ''
             }`}
-            href="/sobre"
+            to="/sobre"
           >
             Sobre
-          </a>
-          <a
+          </Link>
+          <Link
             className={`${
               isLinkActive('servicos', '/servicos') ? styles.active : ''
             }`}
-            href="/servicos"
+            to="/servicos"
           >
             Serviços
-          </a>
-          <a
+          </Link>
+          <Link
             className={`${isLinkActive('prw', '/prw') ? styles.active : ''}`}
-            href="/prw"
+            to="/prw"
           >
             PRW Embalagens
-          </a>
-          <a
+          </Link>
+          <Link
             className={`${isLinkActive('contact') ? styles.active : ''}`}
-            href="/fale-conosco"
+            to="/fale-conosco"
           >
             Contato
-          </a>
+          </Link>
         </div>
       </nav>
     </header>
