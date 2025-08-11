@@ -2442,7 +2442,7 @@ const routes = [
     )
   },
   {
-    path: '/digital',
+    path: '/gravacao-digital-uv',
     title: 'Impressão Digital - PRM Gravações',
     description:
       'Impressão digital de alta qualidade para diversos materiais. Cores vibrantes e definição perfeita em todos os projetos.',
@@ -2452,7 +2452,7 @@ const routes = [
     )
   },
   {
-    path: '/digital360',
+    path: '/gravacao-digital-uv-360',
     title: 'Digital 360° - PRM Gravações',
     description:
       'Impressão digital 360° para personalização completa de produtos cilíndricos. Tecnologia inovadora e resultados excepcionais.',
