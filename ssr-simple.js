@@ -2640,12 +2640,10 @@ for (const route of routes) {
 
     // Cria diretório se necessário
     if (route.path !== '/') {
-      const routePath = path.join(distPath, route.path)
-      if (!fs.existsSync(routePath)) {
-        fs.mkdirSync(routePath, { recursive: true })
-      }
-      fs.writeFileSync(path.join(routePath, 'index.html'), html)
+      // Cria um arquivo como /dist/sobre.html, /dist/servicos.html, etc.
+      fs.writeFileSync(path.join(distPath, `${route.path}.html`), html)
     } else {
+      // A página inicial continua sendo /dist/index.html
       fs.writeFileSync(indexPath, html)
     }
 
