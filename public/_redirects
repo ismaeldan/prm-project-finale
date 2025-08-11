@@ -1,3 +1,0 @@
-# Redireciona qualquer URL com uma barra no final para a versão sem barra
-
-/:splat/ /:splat 301
