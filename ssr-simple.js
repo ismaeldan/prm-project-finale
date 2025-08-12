@@ -394,7 +394,7 @@ function generateServicesContent() {
         ><img
           class="_logo_1baxb_41"
           alt="PRM TECPRINT"
-          src="/src/assets/LOGOS%20PRM%20color.png"
+          src="/assets/LOGOS%20PRM%20color.png"
       /></a>
       <div class="_menu_1baxb_51">
         <a class="" href="/">Home</a><a class="" href="/sobre">Sobre</a
@@ -432,7 +432,7 @@ function generateServicesContent() {
       <div class="container">
         <h1>Conheça nossos serviços</h1>
         <div class="_service__item_15ssi_23">
-          <img alt="Imagem baixo relevo" src="/src/assets/baixo-relevo.webp" />
+          <img alt="Imagem baixo relevo" src="/assets/baixo-relevo.webp" />
           <div id="baixo_relevo" class="_service__item__content_15ssi_49">
             <div class="_line_15ssi_61"></div>
             <h2>Baixo Relevo</h2>
@@ -475,10 +475,10 @@ function generateServicesContent() {
             </div>
             <div class="_line_15ssi_61"></div>
           </div>
-          <img alt="Imagem DTF" src="/src/assets/dtf.webp" />
+          <img alt="Imagem DTF" src="/assets/dtf.webp" />
         </div>
         <div id="laser" class="_service__item_15ssi_23">
-          <img alt="Imagem laser" src="/src/assets/laser.webp" />
+          <img alt="Imagem laser" src="/assets/laser.webp" />
           <div class="_service__item__content_15ssi_49">
             <div class="_line_15ssi_61"></div>
             <h2>Laser</h2>
@@ -514,10 +514,10 @@ function generateServicesContent() {
             </div>
             <div class="_line_15ssi_61"></div>
           </div>
-          <img alt="Imagem Silk" src="/src/assets/silk.webp" />
+          <img alt="Imagem Silk" src="/assets/silk.webp" />
         </div>
         <div id="sublimacao" class="_service__item_15ssi_23">
-          <img alt="Imagem Sublimação" src="/src/assets/sublimacao.webp" />
+          <img alt="Imagem Sublimação" src="/assets/sublimacao.webp" />
           <div class="_service__item__content__reverse_15ssi_51">
             <div class="_line_15ssi_61"></div>
             <h2>Sublimação</h2>
@@ -551,10 +551,10 @@ function generateServicesContent() {
             </div>
             <div class="_line_15ssi_61"></div>
           </div>
-          <img alt="Imagem Tampografia" src="/src/assets/tampografia.webp" />
+          <img alt="Imagem Tampografia" src="/assets/tampografia.webp" />
         </div>
         <div id="transfer" class="_service__item_15ssi_23">
-          <img alt="Imagem Transfer" src="/src/assets/transfer.webp" />
+          <img alt="Imagem Transfer" src="/assets/transfer.webp" />
           <div class="_service__item__content__reverse_15ssi_51">
             <div class="_line_15ssi_61"></div>
             <h2>Transfer</h2>
@@ -591,10 +591,10 @@ function generateServicesContent() {
             </div>
             <div class="_line_15ssi_61"></div>
           </div>
-          <img alt="Imagem Digital" src="/src/assets/digital.webp" />
+          <img alt="Imagem Digital" src="/assets/digital.webp" />
         </div>
         <div id="digital360" class="_service__item_15ssi_23">
-          <img alt="Imagem Digital 360" src="/src/assets/digital360.webp" />
+          <img alt="Imagem Digital 360" src="/assets/digital360.webp" />
           <div class="_service__item__content__reverse_15ssi_51">
             <div class="_line_15ssi_61"></div>
             <h2>Gravação Digital UV 360</h2>
@@ -680,7 +680,7 @@ function generateServicesContent() {
         ><img
           class="_logo_3lf4h_33"
           alt="PRM TECPRINT"
-          src="/src/assets/LOGOS%20PRM%20PB.png"
+          src="/assets/LOGOS%20PRM%20PB.png"
       /></a>
       <div class="_social_3lf4h_65">
         <a
@@ -879,7 +879,7 @@ function generateServiceDTFContent() {
         ><img
           class="_logo_1baxb_41"
           alt="PRM TECPRINT"
-          src="/src/assets/LOGOS%20PRM%20color.png"
+          src="/assets/LOGOS%20PRM%20color.png"
       /></a>
       <div class="_menu_1baxb_51">
         <a class="" href="/">Home</a><a class="" href="/sobre">Sobre</a
@@ -922,7 +922,7 @@ function generateServiceDTFContent() {
         </ul>
       </div>
       <div class="_service__item_1bhp7_9 container">
-        <img alt="Imagem DTF" src="/src/assets/dtf.webp" />
+        <img alt="Imagem DTF" src="/assets/dtf.webp" />
         <div id="baixo_relevo" class="_service__item__content_1bhp7_35">
           <div class="_line_1bhp7_47"></div>
           <h1>DTF</h1>
@@ -1005,7 +1005,7 @@ function generateServiceDTFContent() {
         ><img
           class="_logo_3lf4h_33"
           alt="PRM TECPRINT"
-          src="/src/assets/LOGOS%20PRM%20PB.png"
+          src="/assets/LOGOS%20PRM%20PB.png"
       /></a>
       <div class="_social_3lf4h_65">
         <a
@@ -1040,7 +1040,7 @@ function generateServiceLaserContent() {
         ><img
           class="_logo_1baxb_41"
           alt="PRM TECPRINT"
-          src="/src/assets/LOGOS%20PRM%20color.png"
+          src="/assets/LOGOS%20PRM%20color.png"
       /></a>
       <div class="_menu_1baxb_51">
         <a class="" href="/">Home</a><a class="" href="/sobre">Sobre</a
@@ -1083,7 +1083,7 @@ function generateServiceLaserContent() {
         </ul>
       </div>
       <div class="_service__item_1bhp7_9 container">
-        <img alt="Imagem laser" src="/src/assets/laser.webp" />
+        <img alt="Imagem laser" src="/assets/laser.webp" />
         <div id="laser" class="_service__item__content_1bhp7_35">
           <div class="_line_1bhp7_47"></div>
           <h1>Gravação a Laser</h1>
@@ -1161,7 +1161,7 @@ function generateServiceLaserContent() {
         ><img
           class="_logo_3lf4h_33"
           alt="PRM TECPRINT"
-          src="/src/assets/LOGOS%20PRM%20PB.png"
+          src="/assets/LOGOS%20PRM%20PB.png"
       /></a>
       <div class="_social_3lf4h_65">
         <a
@@ -1196,7 +1196,7 @@ function generateServiceTransferContent() {
         ><img
           class="_logo_1baxb_41"
           alt="PRM TECPRINT"
-          src="/src/assets/LOGOS%20PRM%20color.png"
+          src="/assets/LOGOS%20PRM%20color.png"
       /></a>
       <div class="_menu_1baxb_51">
         <a class="" href="/">Home</a><a class="" href="/sobre">Sobre</a
@@ -1239,7 +1239,7 @@ function generateServiceTransferContent() {
         </ul>
       </div>
       <div class="_service__item_1vr1o_9 container">
-        <img alt="Imagem laser" src="/src/assets/transfer.webp" />
+        <img alt="Imagem laser" src="/assets/transfer.webp" />
         <div id="digital" class="_service__item__content_1vr1o_35">
           <div class="_line_1vr1o_47"></div>
           <h1>Transfer</h1>
@@ -1317,7 +1317,7 @@ function generateServiceTransferContent() {
         ><img
           class="_logo_3lf4h_33"
           alt="PRM TECPRINT"
-          src="/src/assets/LOGOS%20PRM%20PB.png"
+          src="/assets/LOGOS%20PRM%20PB.png"
       /></a>
       <div class="_social_3lf4h_65">
         <a
@@ -1352,7 +1352,7 @@ function generateServiceDigitalContent() {
         ><img
           class="_logo_1baxb_41"
           alt="PRM TECPRINT"
-          src="/src/assets/LOGOS%20PRM%20color.png"
+          src="/assets/LOGOS%20PRM%20color.png"
       /></a>
       <div class="_menu_1baxb_51">
         <a class="" href="/">Home</a><a class="" href="/sobre">Sobre</a
@@ -1395,7 +1395,7 @@ function generateServiceDigitalContent() {
         </ul>
       </div>
       <div class="_service__item_1bhp7_9 container">
-        <img alt="Imagem laser" src="/src/assets/digital.webp" />
+        <img alt="Imagem laser" src="/assets/digital.webp" />
         <div id="digital" class="_service__item__content_1bhp7_35">
           <div class="_line_1bhp7_47"></div>
           <h1>Gravação Digital UV</h1>
@@ -1475,7 +1475,7 @@ function generateServiceDigitalContent() {
         ><img
           class="_logo_3lf4h_33"
           alt="PRM TECPRINT"
-          src="/src/assets/LOGOS%20PRM%20PB.png"
+          src="/assets/LOGOS%20PRM%20PB.png"
       /></a>
       <div class="_social_3lf4h_65">
         <a
@@ -1510,7 +1510,7 @@ function generateServiceDigital360Content() {
         ><img
           class="_logo_1baxb_41"
           alt="PRM TECPRINT"
-          src="/src/assets/LOGOS%20PRM%20color.png"
+          src="/assets/LOGOS%20PRM%20color.png"
       /></a>
       <div class="_menu_1baxb_51">
         <a class="" href="/">Home</a><a class="" href="/sobre">Sobre</a
@@ -1555,7 +1555,7 @@ function generateServiceDigital360Content() {
         </ul>
       </div>
       <div class="_service__item_1bhp7_9 container">
-        <img alt="Imagem laser" src="/src/assets/digital360.webp" />
+        <img alt="Imagem laser" src="/assets/digital360.webp" />
         <div id="digital360" class="_service__item__content_1bhp7_35">
           <div class="_line_1bhp7_47"></div>
           <h1>Gravação Digital UV 360</h1>
@@ -1636,7 +1636,7 @@ function generateServiceDigital360Content() {
         ><img
           class="_logo_3lf4h_33"
           alt="PRM TECPRINT"
-          src="/src/assets/LOGOS%20PRM%20PB.png"
+          src="/assets/LOGOS%20PRM%20PB.png"
       /></a>
       <div class="_social_3lf4h_65">
         <a
@@ -1671,7 +1671,7 @@ function generateServiceSilkContent() {
         ><img
           class="_logo_1baxb_41"
           alt="PRM TECPRINT"
-          src="/src/assets/LOGOS%20PRM%20color.png"
+          src="/assets/LOGOS%20PRM%20color.png"
       /></a>
       <div class="_menu_1baxb_51">
         <a class="" href="/">Home</a><a class="" href="/sobre">Sobre</a
@@ -1714,7 +1714,7 @@ function generateServiceSilkContent() {
         </ul>
       </div>
       <div class="_service__item_1bhp7_9 container">
-        <img alt="Imagem Silk" src="/src/assets/silk.webp" />
+        <img alt="Imagem Silk" src="/assets/silk.webp" />
         <div id="silk" class="_service__item__content_1bhp7_35">
           <div class="_line_1bhp7_47"></div>
           <h1>Silk Screen</h1>
@@ -1792,7 +1792,7 @@ function generateServiceSilkContent() {
         ><img
           class="_logo_3lf4h_33"
           alt="PRM TECPRINT"
-          src="/src/assets/LOGOS%20PRM%20PB.png"
+          src="/assets/LOGOS%20PRM%20PB.png"
       /></a>
       <div class="_social_3lf4h_65">
         <a
@@ -1827,7 +1827,7 @@ function generateServiceSublimacaoContent() {
         ><img
           class="_logo_1baxb_41"
           alt="PRM TECPRINT"
-          src="/src/assets/LOGOS%20PRM%20color.png"
+          src="/assets/LOGOS%20PRM%20color.png"
       /></a>
       <div class="_menu_1baxb_51">
         <a class="" href="/">Home</a><a class="" href="/sobre">Sobre</a
@@ -1870,7 +1870,7 @@ function generateServiceSublimacaoContent() {
         </ul>
       </div>
       <div class="_service__item_1bhp7_9 container">
-        <img alt="Imagem Sublimacao" src="/src/assets/sublimacao.webp" />
+        <img alt="Imagem Sublimacao" src="/assets/sublimacao.webp" />
         <div id="sublimacao" class="_service__item__content_1bhp7_35">
           <div class="_line_1bhp7_47"></div>
           <h1>Sublimação</h1>
@@ -1948,7 +1948,7 @@ function generateServiceSublimacaoContent() {
         ><img
           class="_logo_3lf4h_33"
           alt="PRM TECPRINT"
-          src="/src/assets/LOGOS%20PRM%20PB.png"
+          src="/assets/LOGOS%20PRM%20PB.png"
       /></a>
       <div class="_social_3lf4h_65">
         <a
@@ -1983,7 +1983,7 @@ function generateServiceTampografiaContent() {
         ><img
           class="_logo_1baxb_41"
           alt="PRM TECPRINT"
-          src="/src/assets/LOGOS%20PRM%20color.png"
+          src="/assets/LOGOS%20PRM%20color.png"
       /></a>
       <div class="_menu_1baxb_51">
         <a class="" href="/">Home</a><a class="" href="/sobre">Sobre</a
@@ -2026,7 +2026,7 @@ function generateServiceTampografiaContent() {
         </ul>
       </div>
       <div class="_service__item_1bhp7_9 container">
-        <img alt="Imagem Tampografia" src="/src/assets/tampografia.webp" />
+        <img alt="Imagem Tampografia" src="/assets/tampografia.webp" />
         <div id="tampografia" class="_service__item__content_1bhp7_35">
           <div class="_line_1bhp7_47"></div>
           <h1>Tampografia</h1>
@@ -2105,7 +2105,7 @@ function generateServiceTampografiaContent() {
         ><img
           class="_logo_3lf4h_33"
           alt="PRM TECPRINT"
-          src="/src/assets/LOGOS%20PRM%20PB.png"
+          src="/assets/LOGOS%20PRM%20PB.png"
       /></a>
       <div class="_social_3lf4h_65">
         <a
