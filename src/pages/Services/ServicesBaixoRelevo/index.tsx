@@ -1,4 +1,4 @@
-import ImgBaixoRelevo from '../../../assets/BAIXO RELEVO.jpg'
+import ImgBaixoRelevo from '../../../assets/baixo-relevo.webp'
 import styles from './ServiceDetail.module.css'
 
 import WhatsApp from '../../../assets/whatsapp.svg'

@@ -1,5 +1,5 @@
 import styles from './services.module.css'
-import ImgBaixoRelevo from '../../assets/BAIXO RELEVO.jpg'
+import ImgBaixoRelevo from '../../assets/baixo-relevo.webp'
 import ImgDTF from '../../assets/DTF.png'
 import ImgLaser from '../../assets/LASER.jpg'
 import ImgSublimacao from '../../assets/sublimacao.jpg'
