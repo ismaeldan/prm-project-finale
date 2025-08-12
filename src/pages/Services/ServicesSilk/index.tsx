@@ -1,4 +1,4 @@
-import ImgSilk from '../../../assets/SILK.jpg'
+import ImgSilk from '../../../assets/silk.webp'
 import styles from './ServiceDetail.module.css'
 
 import WhatsApp from '../../../assets/whatsapp.svg'

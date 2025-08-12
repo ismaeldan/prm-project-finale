@@ -1,4 +1,4 @@
-import ImgDigital from '../../../assets/DIGITAL.jpg'
+import ImgDigital from '../../../assets/digital.webp'
 import styles from './ServiceDetail.module.css'
 
 import WhatsApp from '../../../assets/whatsapp.svg'

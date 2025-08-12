@@ -1,4 +1,4 @@
-import ImgTransfer from '../../../assets/TRANSFER.jpg'
+import ImgTransfer from '../../../assets/transfer.webp'
 import styles from './ServiceDetail.module.css'
 
 import WhatsApp from '../../../assets/whatsapp.svg'

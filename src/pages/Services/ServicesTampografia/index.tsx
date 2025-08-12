@@ -1,4 +1,4 @@
-import ImgTampografia from '../../../assets/TAMPOGRAFIA.jpg'
+import ImgTampografia from '../../../assets/tampografia.webp'
 import styles from './ServiceDetail.module.css'
 
 import WhatsApp from '../../../assets/whatsapp.svg'

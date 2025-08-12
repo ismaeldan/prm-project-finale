@@ -1,4 +1,4 @@
-import ImgDTF from '../../../assets/DTF.png'
+import ImgDTF from '../../../assets/dtf.webp'
 import styles from './ServiceDetail.module.css'
 
 import WhatsApp from '../../../assets/whatsapp.svg'

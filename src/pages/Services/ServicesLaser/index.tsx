@@ -1,4 +1,4 @@
-import ImgLaser from '../../../assets/LASER.jpg'
+import ImgLaser from '../../../assets/laser.webp'
 import styles from './ServiceDetail.module.css'
 
 import WhatsApp from '../../../assets/whatsapp.svg'
