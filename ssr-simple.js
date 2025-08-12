@@ -85,7 +85,7 @@ function generateHomeContent() {
               ><img
                 alt="Icon-SilkScreen"
                 class="_silk_fcl6o_249"
-                src="/assets/Silk-Icon-B4fz2XBO.svg"
+                src="/assets/silkicon-BwcxuYmr.webp"
               />
               <h3>Silk Screen</h3>
               <p>
@@ -96,7 +96,7 @@ function generateHomeContent() {
             ><a class="_service__card_fcl6o_209" href="/servicos"
               ><img
                 alt="Icon-Transfer"
-                src="/assets/Transfer-Icon-DGCSumJV.svg"
+                src="/assets/transfericon-CFfSzW51.webp"
               />
               <h3>Transfer</h3>
               <p>
