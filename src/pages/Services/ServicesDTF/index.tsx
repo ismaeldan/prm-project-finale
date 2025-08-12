@@ -13,13 +13,26 @@ export function DTF() {
 
   return (
     <main className={styles.main}>
+      <div className="container">
+        <ul className={styles.pagePath}>
+          <li>
+            <Link to={'/'}>Home</Link>
+          </li>
+          <li>
+            <Link to={'/servicos'}>Seriços</Link>
+          </li>
+          <li>
+            <Link to={'/DTF'}>DTF</Link>
+          </li>
+        </ul>
+      </div>
       <div className={`${styles.service__item} container`}>
         <img src={ImgDTF} alt="Imagem DTF" />
 
         <div id="baixo_relevo" className={styles.service__item__content}>
           <div className={styles.line}></div>
-          <h2>DTF</h2>
-          <p>
+          <h1>DTF</h1>
+          <h2 className={styles.h2paragraph}>
             A técnica DTF (Direct to Film) com adesivo é um método de
             personalização gráfica que imprime imagens em alta definição em um
             filme especial com tintas pigmentadas e pó adesivo termofusível.
@@ -30,7 +43,7 @@ export function DTF() {
             cores, resistência, flexibilidade e durabilidade. É uma solução
             versátil, com acabamento profissional e aplicação simplificada,
             ideal para produções em pequena e média escala.
-          </p>
+          </h2>
 
           <div className={styles.centerButton}>
             <Link className={styles.button} to="/servicos">

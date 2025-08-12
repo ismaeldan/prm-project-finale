@@ -13,13 +13,29 @@ export function BaixoRelevo() {
   useDocumentTitle('Gravação em Baixo Relevo')
   return (
     <main id="services" className={styles.main}>
+      <div className="container">
+        <ul className={styles.pagePath}>
+          <li>
+            <Link to={'/'}>Home</Link>
+          </li>
+          <li>
+            <Link to={'/servicos'}>Seriços</Link>
+          </li>
+          <li>
+            <Link to={'/gravacao-em-baixo-relevo'}>
+              Gravação em Baixo Relevo
+            </Link>
+          </li>
+        </ul>
+      </div>
+
       <div className={`${styles.service__item} container`}>
         <img src={ImgBaixoRelevo} alt="Imagem baixo relevo" />
 
         <div id="baixo_relevo" className={styles.service__item__content}>
           <div className={styles.line}></div>
           <h1>Gravação em Baixo Relevo</h1>
-          <p>
+          <h2 className={styles.h2paragraph}>
             A gravação em baixo relevo é um processo que cria marcas ou desenhos
             em uma superfície, removendo uma fina camada do material para formar
             um efeito de profundidade. Diferente do alto relevo, onde as formas
@@ -28,7 +44,7 @@ export function BaixoRelevo() {
             Esse método é amplamente utilizado para personalizar produtos
             produzidos em couro e courino, conferindo-lhes durabilidade e
             sofisticação estética.
-          </p>
+          </h2>
 
           <div className={styles.centerButton}>
             <Link className={styles.button} to="/servicos">

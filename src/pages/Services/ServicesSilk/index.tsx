@@ -13,19 +13,32 @@ export function Silk() {
 
   return (
     <main className={styles.main}>
+      <div className="container">
+        <ul className={styles.pagePath}>
+          <li>
+            <Link to={'/'}>Home</Link>
+          </li>
+          <li>
+            <Link to={'/servicos'}>Seriços</Link>
+          </li>
+          <li>
+            <Link to={'/silk'}>Silk Screen</Link>
+          </li>
+        </ul>
+      </div>
       <div className={`${styles.service__item} container`}>
         <img src={ImgSilk} alt="Imagem Silk" />
 
         <div id="silk" className={styles.service__item__content}>
           <div className={styles.line}></div>
           <h1>Silk Screen</h1>
-          <p>
+          <h2 className={styles.h2paragraph}>
             Um método tradicional e altamente eficaz. Neste processo, a tinta é
             pressionada através de uma tela esticada sobre o objeto, criando um
             design durável e de alta qualidade. Aplicação em camisetas, bonés,
             sacolas e uma variedade de materiais promocionais, a serigrafia é
             particularmente recomendada para grandes tiragens.
-          </p>
+          </h2>
 
           <div className={styles.centerButton}>
             <Link className={styles.button} to="/servicos">

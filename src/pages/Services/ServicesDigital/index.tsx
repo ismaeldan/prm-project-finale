@@ -13,13 +13,27 @@ export function Digital() {
 
   return (
     <main className={styles.main}>
+      <div className="container">
+        <ul className={styles.pagePath}>
+          <li>
+            <Link to={'/'}>Home</Link>
+          </li>
+          <li>
+            <Link to={'/servicos'}>Seriços</Link>
+          </li>
+          <li>
+            <Link to={'/gravacao-digital-uv'}>Gravação Digital UV</Link>
+          </li>
+        </ul>
+      </div>
+
       <div className={`${styles.service__item} container`}>
         <img src={ImgDigital} alt="Imagem laser" />
 
         <div id="digital" className={styles.service__item__content}>
           <div className={styles.line}></div>
           <h1>Gravação Digital UV</h1>
-          <p>
+          <h2 className={styles.h2paragraph}>
             A gravação digital UV é um processo de impressão direta que utiliza
             tintas especiais curadas por luz ultravioleta, resultando em
             impressões resistentes, duráveis e com alta definição em diversas
@@ -27,7 +41,7 @@ export function Digital() {
             sofisticados, sendo ideal para tiragens curtas e médias devido à sua
             agilidade, personalização e baixo custo inicial, já que dispensa o
             uso de clichês ou matrizes.
-          </p>
+          </h2>
 
           <div className={styles.centerButton}>
             <Link className={styles.button} to="/servicos">

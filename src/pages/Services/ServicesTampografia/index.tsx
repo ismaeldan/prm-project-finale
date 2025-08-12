@@ -13,20 +13,33 @@ export function Tampografia() {
 
   return (
     <main className={styles.main}>
+      <div className="container">
+        <ul className={styles.pagePath}>
+          <li>
+            <Link to={'/'}>Home</Link>
+          </li>
+          <li>
+            <Link to={'/servicos'}>Seriços</Link>
+          </li>
+          <li>
+            <Link to={'/tampografia'}>Tampografia</Link>
+          </li>
+        </ul>
+      </div>
       <div className={`${styles.service__item} container`}>
         <img src={ImgTampografia} alt="Imagem Tampografia" />
 
         <div id="tampografia" className={styles.service__item__content}>
           <div className={styles.line}></div>
           <h1>Tampografia</h1>
-          <p>
+          <h2 className={styles.h2paragraph}>
             A tinta é transferida de um clichê para o produto através de um
             tampão de silicone, resultando em detalhes nítidos mesmo em
             superfícies irregulares. Amplamente empregada em brindes
             corporativos como canetas, produtos eletrônicos e itens de
             escritório, a Tampografia oferece uma personalização durável e de
             qualidade.
-          </p>
+          </h2>
 
           <div className={styles.centerButton}>
             <Link className={styles.button} to="/servicos">

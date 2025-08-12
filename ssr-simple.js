@@ -750,12 +750,21 @@ function generateServiceBaixoRelevoContent() {
   </header>
   <main style="padding: 20px 0px">
     <main id="services">
-      <div class="_service__item_jfbaw_9 container">
+      <div class="container">
+        <ul class="_pagePath_1pzx3_9">
+          <li><a href="/">Home</a></li>
+          <li><a href="/servicos">Seriços</a></li>
+          <li>
+            <a href="/gravacao-em-baixo-relevo">Gravação em Baixo Relevo</a>
+          </li>
+        </ul>
+      </div>
+      <div class="_service__item_1pzx3_43 container">
         <img alt="Imagem baixo relevo" src="/src/assets/BAIXO%20RELEVO.jpg" />
-        <div id="baixo_relevo" class="_service__item__content_jfbaw_35">
-          <div class="_line_jfbaw_47"></div>
+        <div id="baixo_relevo" class="_service__item__content_1pzx3_69">
+          <div class="_line_1pzx3_81"></div>
           <h1>Gravação em Baixo Relevo</h1>
-          <p>
+          <h2 class="_h2paragraph_1pzx3_93">
             A gravação em baixo relevo é um processo que cria marcas ou desenhos
             em uma superfície, removendo uma fina camada do material para formar
             um efeito de profundidade. Diferente do alto relevo, onde as formas
@@ -764,23 +773,23 @@ function generateServiceBaixoRelevoContent() {
             Esse método é amplamente utilizado para personalizar produtos
             produzidos em couro e courino, conferindo-lhes durabilidade e
             sofisticação estética.
-          </p>
-          <div class="_centerButton_jfbaw_59">
-            <a class="_button_jfbaw_169" href="/servicos">Mais Serviços</a>
+          </h2>
+          <div class="_centerButton_1pzx3_109">
+            <a class="_button_1pzx3_219" href="/servicos">Mais Serviços</a>
           </div>
-          <div class="_line_jfbaw_47"></div>
+          <div class="_line_1pzx3_81"></div>
         </div>
       </div>
       <div class="divider-2"></div>
       <section id="contact">
-        <div class="_container__contact_jfbaw_73 container">
-          <div class="_contact__text_jfbaw_91">
+        <div class="_container__contact_1pzx3_123 container">
+          <div class="_contact__text_1pzx3_141">
             <h2>Entre em Contato</h2>
             <p>
               Entre em contato com a PRM TecPrint, queremos tirar suas dúvidas.
             </p>
             <a
-              class="_button_jfbaw_169"
+              class="_button_1pzx3_219"
               href="https://wa.me/5511939006543?text=Ol%C3%A1%2C%20quero%20conhecer%20melhor%20os%20seus%20produtos
         "
               target="_blank"
@@ -792,7 +801,7 @@ function generateServiceBaixoRelevoContent() {
             >
           </div>
           <div>
-            <ul class="_contact__list_jfbaw_123">
+            <ul class="_contact__list_1pzx3_173">
               <li>
                 <a href="tel:11939006543"
                   ><img
@@ -860,23 +869,22 @@ function generateServiceBaixoRelevoContent() {
 }
 
 function generateServiceDTFContent() {
-  return `
-    <div id="root">
+  return `<div id="root">
   <header id="header" class="undefined">
-    <nav class="_header_vz7lq_13 container">
+    <nav class="_header_1baxb_25 container">
       <a href="/"
         ><img
-          class="_logo_vz7lq_21"
+          class="_logo_1baxb_41"
           alt="PRM TECPRINT"
-          src="data:image/png;base64,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"
+          src="/src/assets/LOGOS%20PRM%20color.png"
       /></a>
-      <div class="_menu_vz7lq_26">
+      <div class="_menu_1baxb_51">
         <a class="" href="/">Home</a><a class="" href="/sobre">Sobre</a
         ><a class="" href="/servicos">Serviços</a
         ><a class="" href="/prw">PRW Embalagens</a
         ><a class="" href="/fale-conosco">Contato</a>
       </div>
-      <button class="_menuToggle_vz7lq_68" aria-label="Toggle menu">
+      <button class="_menuToggle_1baxb_135" aria-label="Toggle menu">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="30"
@@ -893,7 +901,7 @@ function generateServiceDTFContent() {
           <line x1="3" y1="18" x2="21" y2="18"></line>
         </svg>
       </button>
-      <div class="_mobileMenu_vz7lq_84">
+      <div class="_mobileMenu_1baxb_167">
         <a class="" href="/">Home</a><a class="" href="/sobre">Sobre</a
         ><a class="" href="/servicos">Serviços</a
         ><a class="" href="/prw">PRW Embalagens</a
@@ -903,12 +911,19 @@ function generateServiceDTFContent() {
   </header>
   <main style="padding: 20px 0px">
     <main>
-      <div class="_service__item_1gmim_5 container">
-        <img alt="Imagem DTF" src="/assets/DTF-DaP70Bzb.png" />
-        <div id="baixo_relevo" class="_service__item__content_1gmim_18">
-          <div class="_line_1gmim_24"></div>
+      <div class="container">
+        <ul class="_pagePath_1bhp7_69">
+          <li><a href="/">Home</a></li>
+          <li><a href="/servicos">Seriços</a></li>
+          <li><a href="/DTF">DTF</a></li>
+        </ul>
+      </div>
+      <div class="_service__item_1bhp7_9 container">
+        <img alt="Imagem DTF" src="/src/assets/DTF.png" />
+        <div id="baixo_relevo" class="_service__item__content_1bhp7_35">
+          <div class="_line_1bhp7_47"></div>
           <h1>DTF</h1>
-          <p>
+          <h2 class="_h2paragraph_1bhp7_103">
             A técnica DTF (Direct to Film) com adesivo é um método de
             personalização gráfica que imprime imagens em alta definição em um
             filme especial com tintas pigmentadas e pó adesivo termofusível.
@@ -919,25 +934,23 @@ function generateServiceDTFContent() {
             cores, resistência, flexibilidade e durabilidade. É uma solução
             versátil, com acabamento profissional e aplicação simplificada,
             ideal para produções em pequena e média escala.
-          </p>
-          <div class="_centerButton_1gmim_30">
-            <a class="_button_1gmim_84" href="/servicos" data-discover="true"
-              >Mais Serviços</a
-            >
+          </h2>
+          <div class="_centerButton_1bhp7_59">
+            <a class="_button_1bhp7_219" href="/servicos">Mais Serviços</a>
           </div>
-          <div class="_line_1gmim_24"></div>
+          <div class="_line_1bhp7_47"></div>
         </div>
       </div>
       <div class="divider-2"></div>
       <section id="contact">
-        <div class="_container__contact_1gmim_37 container">
-          <div class="_contact__text_1gmim_46">
-            <h2>Entre em Contato</h2>
+        <div class="_container__contact_1bhp7_123 container">
+          <div class="_contact__text_1bhp7_141">
+            <h1>Entre em Contato</h1>
             <p>
               Entre em contato com a PRM TecPrint, queremos tirar suas dúvidas.
             </p>
             <a
-              class="_button_1gmim_84"
+              class="_button_1bhp7_219"
               href="https://wa.me/5511939006543?text=Ol%C3%A1%2C%20quero%20conhecer%20melhor%20os%20seus%20produtos
         "
               target="_blank"
@@ -949,7 +962,7 @@ function generateServiceDTFContent() {
             >
           </div>
           <div>
-            <ul class="_contact__list_1gmim_62">
+            <ul class="_contact__list_1bhp7_173">
               <li>
                 <a href="tel:11939006543"
                   ><img
@@ -984,14 +997,14 @@ function generateServiceDTFContent() {
     </main>
   </main>
   <footer id="footer">
-    <div class="_footer_ov6ca_8 container">
+    <div class="_footer_3lf4h_15 container">
       <a href="/"
         ><img
-          class="_logo_ov6ca_17"
+          class="_logo_3lf4h_33"
           alt="PRM TECPRINT"
-          src="data:image/png;base64,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"
+          src="/src/assets/LOGOS%20PRM%20PB.png"
       /></a>
-      <div class="_social_ov6ca_33">
+      <div class="_social_3lf4h_65">
         <a
           href="https://www.instagram.com/prm_gravacoes?igsh=MTVwbHYwYWIyemJnMQ=="
           target="_blank"
@@ -1007,14 +1020,13 @@ function generateServiceDTFContent() {
             src="data:image/svg+xml,%3csvg%20width='39'%20height='39'%20viewBox='0%200%2039%2039'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M26.96%2022.3999C26.64%2022.2399%2024.56%2021.2799%2024.24%2021.1199C23.92%2020.9599%2023.6%2020.9599%2023.28%2021.2799C22.96%2021.5999%2022.32%2022.5599%2022%2022.8799C21.84%2023.1999%2021.52%2023.1999%2021.2%2023.0399C20.08%2022.5599%2018.96%2021.9199%2018%2021.1199C17.2%2020.3199%2016.4%2019.3599%2015.76%2018.3999C15.6%2018.0799%2015.76%2017.7599%2015.92%2017.5999C16.08%2017.4399%2016.24%2017.1199%2016.56%2016.9599C16.72%2016.7999%2016.88%2016.4799%2016.88%2016.3199C17.04%2016.1599%2017.04%2015.8399%2016.88%2015.6799C16.72%2015.5199%2015.92%2013.5999%2015.6%2012.7999C15.44%2011.6799%2015.12%2011.6799%2014.8%2011.6799C14.64%2011.6799%2014.32%2011.6799%2014%2011.6799C13.68%2011.6799%2013.2%2011.9999%2013.04%2012.1599C12.08%2013.1199%2011.6%2014.2399%2011.6%2015.5199C11.76%2016.9599%2012.24%2018.3999%2013.2%2019.6799C14.96%2022.2399%2017.2%2024.3199%2019.92%2025.6C20.72%2025.92%2021.36%2026.24%2022.16%2026.4C22.96%2026.72%2023.76%2026.72%2024.72%2026.56C25.84%2026.4%2026.8%2025.6%2027.44%2024.6399C27.76%2023.9999%2027.76%2023.3599%2027.6%2022.7199C27.6%2022.7199%2027.28%2022.5599%2026.96%2022.3999ZM30.96%207.83992C24.72%201.59991%2014.64%201.59991%208.39997%207.83992C3.27998%2012.9599%202.31998%2020.7999%205.83997%2027.04L3.59998%2035.2L12.08%2032.96C14.48%2034.24%2017.04%2034.88%2019.6%2034.88C28.4%2034.88%2035.4399%2027.84%2035.4399%2019.0399C35.5999%2014.8799%2033.84%2010.8799%2030.96%207.83992ZM26.64%2030.24C24.56%2031.52%2022.16%2032.32%2019.6%2032.32C17.2%2032.32%2014.96%2031.68%2012.88%2030.56L12.4%2030.24L7.43997%2031.52L8.71997%2026.72L8.39997%2026.24C4.55997%2019.8399%206.47997%2011.8399%2012.72%207.83992C18.96%203.83991%2026.96%205.91992%2030.8%2011.9999C34.64%2018.2399%2032.88%2026.4%2026.64%2030.24Z'%20fill='%23F9F9F9'/%3e%3c/svg%3e"
         /></a>
       </div>
-      <div class="_text_ov6ca_23">
+      <div class="_text_3lf4h_45">
         <p>© 2025</p>
         <p>Todos os direitos reservados.</p>
       </div>
     </div>
   </footer>
-</div>
-  `
+</div>`
 }
 
 function generateServiceLaserContent() {
@@ -1060,34 +1072,41 @@ function generateServiceLaserContent() {
   </header>
   <main style="padding: 20px 0px">
     <main>
-      <div class="_service__item_jfbaw_9 container">
+      <div class="container">
+        <ul class="_pagePath_1bhp7_69">
+          <li><a href="/">Home</a></li>
+          <li><a href="/servicos">Seriços</a></li>
+          <li><a href="/gravacao-a-laser">Gravação a Laser</a></li>
+        </ul>
+      </div>
+      <div class="_service__item_1bhp7_9 container">
         <img alt="Imagem laser" src="/src/assets/LASER.jpg" />
-        <div id="laser" class="_service__item__content_jfbaw_35">
-          <div class="_line_jfbaw_47"></div>
+        <div id="laser" class="_service__item__content_1bhp7_35">
+          <div class="_line_1bhp7_47"></div>
           <h1>Gravação a Laser</h1>
-          <p>
+          <h2 class="_h2paragraph_1bhp7_103">
             A gravação a laser é um processo de marcação de alta precisão que
             utiliza um feixe de laser para corrosão da superfície de um
             material, criando marcas permanentes. Essa técnica é amplamente
             utilizada em diversos materiais como metal, vidro e madeira, devido
             à sua capacidade de produzir resultados detalhados e permanentes
-          </p>
-          <div class="_centerButton_jfbaw_59">
-            <a class="_button_jfbaw_169" href="/servicos">Mais Serviços</a>
+          </h2>
+          <div class="_centerButton_1bhp7_59">
+            <a class="_button_1bhp7_219" href="/servicos">Mais Serviços</a>
           </div>
-          <div class="_line_jfbaw_47"></div>
+          <div class="_line_1bhp7_47"></div>
         </div>
       </div>
       <div class="divider-2"></div>
       <section id="contact">
-        <div class="_container__contact_jfbaw_73 container">
-          <div class="_contact__text_jfbaw_91">
+        <div class="_container__contact_1bhp7_123 container">
+          <div class="_contact__text_1bhp7_141">
             <h2>Entre em Contato</h2>
             <p>
               Entre em contato com a PRM TecPrint, queremos tirar suas dúvidas.
             </p>
             <a
-              class="_button_jfbaw_169"
+              class="_button_1bhp7_219"
               href="https://wa.me/5511939006543?text=Ol%C3%A1%2C%20quero%20conhecer%20melhor%20os%20seus%20produtos
         "
               target="_blank"
@@ -1099,7 +1118,7 @@ function generateServiceLaserContent() {
             >
           </div>
           <div>
-            <ul class="_contact__list_jfbaw_123">
+            <ul class="_contact__list_1bhp7_173">
               <li>
                 <a href="tel:11939006543"
                   ><img
@@ -1167,23 +1186,22 @@ function generateServiceLaserContent() {
 }
 
 function generateServiceTransferContent() {
-  return `
-    <div id="root">
+  return `<div id="root">
   <header id="header" class="undefined">
-    <nav class="_header_vz7lq_13 container">
+    <nav class="_header_1baxb_25 container">
       <a href="/"
         ><img
-          class="_logo_vz7lq_21"
+          class="_logo_1baxb_41"
           alt="PRM TECPRINT"
-          src="data:image/png;base64,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"
+          src="/src/assets/LOGOS%20PRM%20color.png"
       /></a>
-      <div class="_menu_vz7lq_26">
+      <div class="_menu_1baxb_51">
         <a class="" href="/">Home</a><a class="" href="/sobre">Sobre</a
         ><a class="" href="/servicos">Serviços</a
         ><a class="" href="/prw">PRW Embalagens</a
         ><a class="" href="/fale-conosco">Contato</a>
       </div>
-      <button class="_menuToggle_vz7lq_68" aria-label="Toggle menu">
+      <button class="_menuToggle_1baxb_135" aria-label="Toggle menu">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="30"
@@ -1200,7 +1218,7 @@ function generateServiceTransferContent() {
           <line x1="3" y1="18" x2="21" y2="18"></line>
         </svg>
       </button>
-      <div class="_mobileMenu_vz7lq_84">
+      <div class="_mobileMenu_1baxb_167">
         <a class="" href="/">Home</a><a class="" href="/sobre">Sobre</a
         ><a class="" href="/servicos">Serviços</a
         ><a class="" href="/prw">PRW Embalagens</a
@@ -1210,36 +1228,41 @@ function generateServiceTransferContent() {
   </header>
   <main style="padding: 20px 0px">
     <main>
-      <div class="_service__item_1pngg_5 container">
-        <img alt="Imagem laser" src="/assets/TRANSFER-BjNMpsCD.jpg" />
-        <div id="digital" class="_service__item__content_1pngg_18">
-          <div class="_line_1pngg_24"></div>
+      <div class="container">
+        <ul class="_pagePath_1vr1o_69">
+          <li><a href="/">Home</a></li>
+          <li><a href="/servicos">Seriços</a></li>
+          <li><a href="/transfer">Transfer</a></li>
+        </ul>
+      </div>
+      <div class="_service__item_1vr1o_9 container">
+        <img alt="Imagem laser" src="/src/assets/TRANSFER.jpg" />
+        <div id="digital" class="_service__item__content_1vr1o_35">
+          <div class="_line_1vr1o_47"></div>
           <h1>Transfer</h1>
-          <p>
+          <h2 class="_h2paragraph_1vr1o_103">
             O design é impresso em um papel especial que posteriormente, é
             transferido para o brinde por meio de calor e pressão. Essa técnica
             oferece uma reprodução precisa de detalhes e cores, sendo ideal para
             designs variados. Ampla aplicação em camisetas, bonés, bolsas e uma
             variedade de produtos promocionais.
-          </p>
-          <div class="_centerButton_1pngg_30">
-            <a class="_button_1pngg_84" href="/servicos" data-discover="true"
-              >Mais Serviços</a
-            >
+          </h2>
+          <div class="_centerButton_1vr1o_59">
+            <a class="_button_1vr1o_219" href="/servicos">Mais Serviços</a>
           </div>
-          <div class="_line_1pngg_24"></div>
+          <div class="_line_1vr1o_47"></div>
         </div>
       </div>
       <div class="divider-2"></div>
       <section id="contact">
-        <div class="_container__contact_1pngg_37 container">
-          <div class="_contact__text_1pngg_46">
+        <div class="_container__contact_1vr1o_123 container">
+          <div class="_contact__text_1vr1o_141">
             <h2>Entre em Contato</h2>
             <p>
               Entre em contato com a PRM TecPrint, queremos tirar suas dúvidas.
             </p>
             <a
-              class="_button_1pngg_84"
+              class="_button_1vr1o_219"
               href="https://wa.me/5511939006543?text=Ol%C3%A1%2C%20quero%20conhecer%20melhor%20os%20seus%20produtos
         "
               target="_blank"
@@ -1251,7 +1274,7 @@ function generateServiceTransferContent() {
             >
           </div>
           <div>
-            <ul class="_contact__list_1pngg_62">
+            <ul class="_contact__list_1vr1o_173">
               <li>
                 <a href="tel:11939006543"
                   ><img
@@ -1286,14 +1309,14 @@ function generateServiceTransferContent() {
     </main>
   </main>
   <footer id="footer">
-    <div class="_footer_ov6ca_8 container">
+    <div class="_footer_3lf4h_15 container">
       <a href="/"
         ><img
-          class="_logo_ov6ca_17"
+          class="_logo_3lf4h_33"
           alt="PRM TECPRINT"
-          src="data:image/png;base64,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"
+          src="/src/assets/LOGOS%20PRM%20PB.png"
       /></a>
-      <div class="_social_ov6ca_33">
+      <div class="_social_3lf4h_65">
         <a
           href="https://www.instagram.com/prm_gravacoes?igsh=MTVwbHYwYWIyemJnMQ=="
           target="_blank"
@@ -1309,34 +1332,32 @@ function generateServiceTransferContent() {
             src="data:image/svg+xml,%3csvg%20width='39'%20height='39'%20viewBox='0%200%2039%2039'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M26.96%2022.3999C26.64%2022.2399%2024.56%2021.2799%2024.24%2021.1199C23.92%2020.9599%2023.6%2020.9599%2023.28%2021.2799C22.96%2021.5999%2022.32%2022.5599%2022%2022.8799C21.84%2023.1999%2021.52%2023.1999%2021.2%2023.0399C20.08%2022.5599%2018.96%2021.9199%2018%2021.1199C17.2%2020.3199%2016.4%2019.3599%2015.76%2018.3999C15.6%2018.0799%2015.76%2017.7599%2015.92%2017.5999C16.08%2017.4399%2016.24%2017.1199%2016.56%2016.9599C16.72%2016.7999%2016.88%2016.4799%2016.88%2016.3199C17.04%2016.1599%2017.04%2015.8399%2016.88%2015.6799C16.72%2015.5199%2015.92%2013.5999%2015.6%2012.7999C15.44%2011.6799%2015.12%2011.6799%2014.8%2011.6799C14.64%2011.6799%2014.32%2011.6799%2014%2011.6799C13.68%2011.6799%2013.2%2011.9999%2013.04%2012.1599C12.08%2013.1199%2011.6%2014.2399%2011.6%2015.5199C11.76%2016.9599%2012.24%2018.3999%2013.2%2019.6799C14.96%2022.2399%2017.2%2024.3199%2019.92%2025.6C20.72%2025.92%2021.36%2026.24%2022.16%2026.4C22.96%2026.72%2023.76%2026.72%2024.72%2026.56C25.84%2026.4%2026.8%2025.6%2027.44%2024.6399C27.76%2023.9999%2027.76%2023.3599%2027.6%2022.7199C27.6%2022.7199%2027.28%2022.5599%2026.96%2022.3999ZM30.96%207.83992C24.72%201.59991%2014.64%201.59991%208.39997%207.83992C3.27998%2012.9599%202.31998%2020.7999%205.83997%2027.04L3.59998%2035.2L12.08%2032.96C14.48%2034.24%2017.04%2034.88%2019.6%2034.88C28.4%2034.88%2035.4399%2027.84%2035.4399%2019.0399C35.5999%2014.8799%2033.84%2010.8799%2030.96%207.83992ZM26.64%2030.24C24.56%2031.52%2022.16%2032.32%2019.6%2032.32C17.2%2032.32%2014.96%2031.68%2012.88%2030.56L12.4%2030.24L7.43997%2031.52L8.71997%2026.72L8.39997%2026.24C4.55997%2019.8399%206.47997%2011.8399%2012.72%207.83992C18.96%203.83991%2026.96%205.91992%2030.8%2011.9999C34.64%2018.2399%2032.88%2026.4%2026.64%2030.24Z'%20fill='%23F9F9F9'/%3e%3c/svg%3e"
         /></a>
       </div>
-      <div class="_text_ov6ca_23">
+      <div class="_text_3lf4h_45">
         <p>© 2025</p>
         <p>Todos os direitos reservados.</p>
       </div>
     </div>
   </footer>
-</div>
-  `
+</div>`
 }
 
 function generateServiceDigitalContent() {
-  return ` 
-    <div id="root">
+  return `<div id="root">
   <header id="header" class="undefined">
-    <nav class="_header_vz7lq_13 container">
+    <nav class="_header_1baxb_25 container">
       <a href="/"
         ><img
-          class="_logo_vz7lq_21"
+          class="_logo_1baxb_41"
           alt="PRM TECPRINT"
-          src="data:image/png;base64,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"
+          src="/src/assets/LOGOS%20PRM%20color.png"
       /></a>
-      <div class="_menu_vz7lq_26">
+      <div class="_menu_1baxb_51">
         <a class="" href="/">Home</a><a class="" href="/sobre">Sobre</a
         ><a class="" href="/servicos">Serviços</a
         ><a class="" href="/prw">PRW Embalagens</a
         ><a class="" href="/fale-conosco">Contato</a>
       </div>
-      <button class="_menuToggle_vz7lq_68" aria-label="Toggle menu">
+      <button class="_menuToggle_1baxb_135" aria-label="Toggle menu">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="30"
@@ -1353,7 +1374,7 @@ function generateServiceDigitalContent() {
           <line x1="3" y1="18" x2="21" y2="18"></line>
         </svg>
       </button>
-      <div class="_mobileMenu_vz7lq_84">
+      <div class="_mobileMenu_1baxb_167">
         <a class="" href="/">Home</a><a class="" href="/sobre">Sobre</a
         ><a class="" href="/servicos">Serviços</a
         ><a class="" href="/prw">PRW Embalagens</a
@@ -1363,12 +1384,19 @@ function generateServiceDigitalContent() {
   </header>
   <main style="padding: 20px 0px">
     <main>
-      <div class="_service__item_1gmim_5 container">
-        <img alt="Imagem laser" src="/assets/DIGITAL-B-SMcLTp.jpg" />
-        <div id="digital" class="_service__item__content_1gmim_18">
-          <div class="_line_1gmim_24"></div>
+      <div class="container">
+        <ul class="_pagePath_1bhp7_69">
+          <li><a href="/">Home</a></li>
+          <li><a href="/servicos">Seriços</a></li>
+          <li><a href="/gravacao-digital-uv">Gravação Digital UV</a></li>
+        </ul>
+      </div>
+      <div class="_service__item_1bhp7_9 container">
+        <img alt="Imagem laser" src="/src/assets/DIGITAL.jpg" />
+        <div id="digital" class="_service__item__content_1bhp7_35">
+          <div class="_line_1bhp7_47"></div>
           <h1>Gravação Digital UV</h1>
-          <p>
+          <h2 class="_h2paragraph_1bhp7_103">
             A gravação digital UV é um processo de impressão direta que utiliza
             tintas especiais curadas por luz ultravioleta, resultando em
             impressões resistentes, duráveis e com alta definição em diversas
@@ -1376,25 +1404,23 @@ function generateServiceDigitalContent() {
             sofisticados, sendo ideal para tiragens curtas e médias devido à sua
             agilidade, personalização e baixo custo inicial, já que dispensa o
             uso de clichês ou matrizes.
-          </p>
-          <div class="_centerButton_1gmim_30">
-            <a class="_button_1gmim_84" href="/servicos" data-discover="true"
-              >Mais Serviços</a
-            >
+          </h2>
+          <div class="_centerButton_1bhp7_59">
+            <a class="_button_1bhp7_219" href="/servicos">Mais Serviços</a>
           </div>
-          <div class="_line_1gmim_24"></div>
+          <div class="_line_1bhp7_47"></div>
         </div>
       </div>
       <div class="divider-2"></div>
       <section id="contact">
-        <div class="_container__contact_1gmim_37 container">
-          <div class="_contact__text_1gmim_46">
+        <div class="_container__contact_1bhp7_123 container">
+          <div class="_contact__text_1bhp7_141">
             <h2>Entre em Contato</h2>
             <p>
               Entre em contato com a PRM TecPrint, queremos tirar suas dúvidas.
             </p>
             <a
-              class="_button_1gmim_84"
+              class="_button_1bhp7_219"
               href="https://wa.me/5511939006543?text=Ol%C3%A1%2C%20quero%20conhecer%20melhor%20os%20seus%20produtos
         "
               target="_blank"
@@ -1406,7 +1432,7 @@ function generateServiceDigitalContent() {
             >
           </div>
           <div>
-            <ul class="_contact__list_1gmim_62">
+            <ul class="_contact__list_1bhp7_173">
               <li>
                 <a href="tel:11939006543"
                   ><img
@@ -1441,14 +1467,14 @@ function generateServiceDigitalContent() {
     </main>
   </main>
   <footer id="footer">
-    <div class="_footer_ov6ca_8 container">
+    <div class="_footer_3lf4h_15 container">
       <a href="/"
         ><img
-          class="_logo_ov6ca_17"
+          class="_logo_3lf4h_33"
           alt="PRM TECPRINT"
-          src="data:image/png;base64,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"
+          src="/src/assets/LOGOS%20PRM%20PB.png"
       /></a>
-      <div class="_social_ov6ca_33">
+      <div class="_social_3lf4h_65">
         <a
           href="https://www.instagram.com/prm_gravacoes?igsh=MTVwbHYwYWIyemJnMQ=="
           target="_blank"
@@ -1464,34 +1490,32 @@ function generateServiceDigitalContent() {
             src="data:image/svg+xml,%3csvg%20width='39'%20height='39'%20viewBox='0%200%2039%2039'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M26.96%2022.3999C26.64%2022.2399%2024.56%2021.2799%2024.24%2021.1199C23.92%2020.9599%2023.6%2020.9599%2023.28%2021.2799C22.96%2021.5999%2022.32%2022.5599%2022%2022.8799C21.84%2023.1999%2021.52%2023.1999%2021.2%2023.0399C20.08%2022.5599%2018.96%2021.9199%2018%2021.1199C17.2%2020.3199%2016.4%2019.3599%2015.76%2018.3999C15.6%2018.0799%2015.76%2017.7599%2015.92%2017.5999C16.08%2017.4399%2016.24%2017.1199%2016.56%2016.9599C16.72%2016.7999%2016.88%2016.4799%2016.88%2016.3199C17.04%2016.1599%2017.04%2015.8399%2016.88%2015.6799C16.72%2015.5199%2015.92%2013.5999%2015.6%2012.7999C15.44%2011.6799%2015.12%2011.6799%2014.8%2011.6799C14.64%2011.6799%2014.32%2011.6799%2014%2011.6799C13.68%2011.6799%2013.2%2011.9999%2013.04%2012.1599C12.08%2013.1199%2011.6%2014.2399%2011.6%2015.5199C11.76%2016.9599%2012.24%2018.3999%2013.2%2019.6799C14.96%2022.2399%2017.2%2024.3199%2019.92%2025.6C20.72%2025.92%2021.36%2026.24%2022.16%2026.4C22.96%2026.72%2023.76%2026.72%2024.72%2026.56C25.84%2026.4%2026.8%2025.6%2027.44%2024.6399C27.76%2023.9999%2027.76%2023.3599%2027.6%2022.7199C27.6%2022.7199%2027.28%2022.5599%2026.96%2022.3999ZM30.96%207.83992C24.72%201.59991%2014.64%201.59991%208.39997%207.83992C3.27998%2012.9599%202.31998%2020.7999%205.83997%2027.04L3.59998%2035.2L12.08%2032.96C14.48%2034.24%2017.04%2034.88%2019.6%2034.88C28.4%2034.88%2035.4399%2027.84%2035.4399%2019.0399C35.5999%2014.8799%2033.84%2010.8799%2030.96%207.83992ZM26.64%2030.24C24.56%2031.52%2022.16%2032.32%2019.6%2032.32C17.2%2032.32%2014.96%2031.68%2012.88%2030.56L12.4%2030.24L7.43997%2031.52L8.71997%2026.72L8.39997%2026.24C4.55997%2019.8399%206.47997%2011.8399%2012.72%207.83992C18.96%203.83991%2026.96%205.91992%2030.8%2011.9999C34.64%2018.2399%2032.88%2026.4%2026.64%2030.24Z'%20fill='%23F9F9F9'/%3e%3c/svg%3e"
         /></a>
       </div>
-      <div class="_text_ov6ca_23">
+      <div class="_text_3lf4h_45">
         <p>© 2025</p>
         <p>Todos os direitos reservados.</p>
       </div>
     </div>
   </footer>
-</div>
-  `
+</div>`
 }
 
 function generateServiceDigital360Content() {
-  return `
-    <div id="root">
-  <header id="header" class="undefined _scroll_vz7lq_63">
-    <nav class="_header_vz7lq_13 container">
+  return `<div id="root">
+  <header id="header" class="undefined">
+    <nav class="_header_1baxb_25 container">
       <a href="/"
         ><img
-          class="_logo_vz7lq_21"
+          class="_logo_1baxb_41"
           alt="PRM TECPRINT"
-          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASYAAAAoCAYAAABTuVceAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAyESURBVHgB7Z1Pj9vGFcDfULuBW7mt3I2TBihg7i7aa+RbT176E9j+BNbeeuoq9wLWfoKV+wFq+dwAWR97sraX9mbtoQgawDYLG2iR2LGQZBM7WnHy3nCopWSKMyKHFLWeH7C2JFIzlEQ+vv/DXv0J7gQMOpCdIQMYcPxzGNy/1IVBtOGC67k1h3+GD5uQjSH++ZyBz4Afro+dB0O/P4w2vmqDyznQ+A16jsfgzhsIj7HPGNzC4xuCIRqu1xjV8PNx8BS7DtYDdj1+7BaLZT4OXvQtyEcDBYKH/7cDDo++3oOHJDBow2u/7588ObrKgN2FbJDAaTION4Gz3sjhj36+de1OtBGFjH/KYJeHx+CmDUTHGOAxgkF+dII9DaFENE+zC2eL5Z3DAcMIAcDhKWli0WvfPem3UTjtQ35cHKdT39p5StoYvfABamhjBtcBNDQhDnsoNBtgCDyWFlgsFuMYF0wRZB5+/sf37kXPUTh1cmhOs5CJ+Ki+fe02PSHhhPPd0nhfw5TWVN/2WqDQ0iwWSzYKE0zE0Ze/btW3dybCaS0QviwfzNAg8+6i63n05HIX+miWqgWfKa2J8ztgsVgKoTDB9M1oDbpfXCFB0KpvXTug18j5ywK2Cwbh6FyPzLoaCMGnMulya01WW7JYiqUQwURCaf/f2/Ds+wvyFdb+hevdpEff+f0+Omf6YI6GU+NC8ImIWylaE78NFoulMNbAIM9REP39/xvw16e/jQmlkMDhBxhe7wutacz2UdPxwBAUtSOTjoQeStouakQqM4u0phb+34UFqf/Oa8LY3LHrgoLUg+IYRGkUBc0zmJemISO4LpjDp2jtzPgmGSZ9lrLmic3lyqdT36284cYjwIO8KTI4Jo0nbuQ4Vn/OPEZRCqYfGWymbf/z4PfN4+Evb3/+Tf0mpOOOnFAYkABB82sT1AfninQGpqGhOEDz9+lH+HoP/U2guMBQa4IMggmF0h6UDJ2IGOl8CAXhhL+xOHmLmCcIo6b9+Gt0suNcn+GfCwbB84VcBb3Jc/w83LDZ/XIPuht34ZOpeUuahxA3VR7efGe/2zHATbxRT/y6LNx2HXKAn+1AXk8+/kXXbbPIc1IpmD7qqpzVX9D2w7qLfheH30vdlfEbIIUB5TiBGtqHhFgHo3D0JbjzduSheSV8R3hyHqvyi57/cMG96P5BaFmgSejL4i2w5CImaI2lbpRMG4VGA4WGUX9pEfOQQKHUnUt/ARPpOqVhzJQ78fu9+paHJ1ro70mEZ1P9SIihqbbLQ+E0j8a66zVHfl9kobP0IeFvz34DvCYia33QBIXjsiJx5DvTO7E4kIB2WZgxfx/0eEvVF9n8DB6AAdZmIrFBeLcPs/UZHDEw53NEbWIwb5uYi8NTyAEeqyc1oxYK2LvxSoey59GFUndQOPkonHTPBx38Bc5JsjIai5xTRn1MJ0/63frWzuSkS6BBWoemtjQFaTb17Z1+mib0Xg2aI/zwGJ3zA8V4nz77kL4wL/JNKXZfqrYkfQQdnX3RjN2hExpPxv++381eakTCfaObq1RpLoxM9PB/H+fwoARMzfWiLUwlKoMis4lutINlzKMD3ZhYeKMi4dRFAXd0qWsmXUeO09HZF8/J27I6Q/ucMh+V4yxVIq7lsMMZZ8eau/ppG0lbipzzUmtS4jhBrkgcr9n0ghgu/UPCE0rC1Fw1RTpKWfPogIKgF5xpNQ0yn01WPhRJoQmWBWCkCPbT5x+ePZFaU9r+VKxry08sq8hl1FBipnJU9F55zAsmh1+BguCM76RuH08ElztvH3R6wz9fTN80VFrTqCYifi5YLCsIddVg0oqInOFQcYwKJuGHUUTD3mTUenTGduTY45Roz8F/EuSmSmuy5SeWFYZ8lCxW6C6d4ZVOEp4rmFDCDim6AAugEbXyKWoGGajVFKkIILPKIXSuztvnXy+TZdY8rUmz/KQH5moALRbjkLMar+dJTpR0hrtQURIFEznMUMJuvq8ZXSAfDEbjSHC0FLv2YUFIk8Fo3EOVtsRjTneMRNxI2ifu9H57APDqrtdMGFipLY0Dto/S0AeLpcLg9bwyzvCpdAGyQ8ke3YjlTIiLtSaatbmzb+YQ/AoN2OaI80nKehosYJM8injXgblwaHLAsTmo4WG2r0ze85J2mXJ6J1ETWd27Z8eI2hLnbvqboEfpD/h54DxBWid+ly3Ihh+VLliqBTnDZUqJB2fO8FyZ4UUwEUyU/ER2aFRXIy9KvFBDwZAsGxhoCY0QPzK1SAvi3GhOkP+93z+kB+hf8pKSK/G1Q3R6p5fNcGihL2t/kmelqy2dQ+jE5XrdOZPoAVRLMOGN9WMoAYPzFKbJkPKBP/AjHuaTeS/34CCp9GWZCMEUF0qiTzf5c7jZQlW8gCdSmTtmq/PjYzOeHHEYU9cBRj2c0i+2NUeUtbSF8AQ9bQksq0ADL0DKxu5DDgIOk5tbLXksmucRQPZMbc15MkPXOWrD1/HGQ8dJArCNzvCB4czwXJBgIvNtdyKUqOzDcGEltdWNLmDTGdTxscXCCgmOajJRqZHcRZeBqqsB1dyhz6wzIme4Qhs8r9oSIQMfPchArbqBABcgs3k6BTUlTMmiboKhynvFPJmhMV+04ZOo4Jec4V+24fiDbj6Baoq1U/TU48H4E6EExoXSXWqrGz2vpde7LTr2fjS29C11EveTr+uUtSB6K58wdnSetSWq9UL1vgeWKShaTdr35YLKdcqch5zhX+F148jaxRr6m/A6umpyJaGsrEUSsiChtB8XSrKTpQv5wS9OjN2lJ2ltQUhbiquoWr2gNHwrbFzsiWkxC2mAIwPaEsZ0h5dTLlzdeag0y4ktPYZCaHccM9lU85hCOsM/RuNAJBFXxRkufExySSQXzDF0Arb7rXRIn83B2pAXDoMxZ7cm5tuZUHKTd5+2zzW1JhX+Iu1SLNXgo245JqbmPP7LNobuOYhuHKitHKwzoa3ovNco5MoJI+DVcYY7huvAhqQlrQdsMy6USFOiZZfABA4MY0KpkSaUxO4JrRlIa4I8MN4BiyUnG13oxhbQWFpe0WxmOITO8KVmhq+JOrBUZzc7xgvxVdIWHq7COww4H9QC53hWixCRLSb6MyU5AnsorKYqsTkdh6pbJWo6P9vy2j+gGUdfKDrwHrCw30sSvaQ7kNCatnbodRcWxz95/I/KRC8sqw36edrSlPIAhPZP18sulIx0hu9GrVaW7QxfwyjUDZaywziAm6/9Ix8WhDLBeUr0jSJaSc7ji1veEN+X2r7WAX4HnfWH9H5aGQUjcSTM3rrTBKmN0miNu5SmdnPfZrUli1mkKfVw0hgubOpWesQXheQhOsP3Z53hXD9X0RgOy+drSUQup9SCDMi155RLMEW1c6Q1xWuAIig363JK9vF6ICJOizoXrbZkBvG947l3BSzRUve0YOukyJYaxcESkG1SIjfM0tqkkPO7UrUytIpKfcvbV2ozse6TFPaUXfK8aDOe9F3VPKid3UXtTL9zwDukLeHJ2UTnbAcM4MyY1CJHKmyz7KKj9R4YbBiHka3DquTiLAIdc9wZTvlFqK0MquAMhyVgtLWuKUSL3u2dG8rCXYffQ+f9VbEkFH6ZUSbrbIrAPFA7646csB8xqHmntCVOfkFuJknwNFxH0I+eyyW2IvO7BQZNBScspl45wUSQMxw1JVf6TCNneOl5RQmZ4aVT2Q6W47FYsVf1g7gjJxAaj7izyAiH1lLhIFcGFr4mNbifNeEMQb/VGKNAzLaKeQtyhleh46Rsk1K6Ez6ikhoTIVZG0TK1GNW1PSCTbiNMFrsRs5GV6GpNp8FqZEFTgeabHHc51TqCWbiQcIOR5tbm/wz3BJqd6w0rJ1nQ5Dyq35A0ztcsPB9nPy8Ggw5fy5WuL+RsRU3OcPx9cp8P0XezyPEwjJ6lKtIYPdtctPRClrc8zTsu5ViNHE7qpJu2Hy05fvL4SHx4ygNZVPVFAdhRCMDeyZOj1LuHsmcUY7snj/s9sFgsSiq9GAGZWk7A1BmoMreJHmaxx0lrghRpfp6LdS2WKlL5VVJEBjlTt32QuU0uZEDha7KtTSyWklmJ5Zs0S0gaOn3B5zFPa7LaksVSPishmMixrRU9o77d29cy1fhIrWk28ma1JYtlCRQimHS874tGDDQzwilXoAsZOQ2mkzLjPcrzElvzzmKxKHBSNJEhXuT3s2gMMZ9N0sUottE+sADSEU6RMT91R8US5WnQZ6XuCPRYNLhbpLVJOO+cz8SOgxVN+rNYlsFPK4aybqxCJKcAAAAASUVORK5CYII="
+          src="/src/assets/LOGOS%20PRM%20color.png"
       /></a>
-      <div class="_menu_vz7lq_26">
+      <div class="_menu_1baxb_51">
         <a class="" href="/">Home</a><a class="" href="/sobre">Sobre</a
         ><a class="" href="/servicos">Serviços</a
         ><a class="" href="/prw">PRW Embalagens</a
         ><a class="" href="/fale-conosco">Contato</a>
       </div>
-      <button class="_menuToggle_vz7lq_68" aria-label="Toggle menu">
+      <button class="_menuToggle_1baxb_135" aria-label="Toggle menu">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="30"
@@ -1508,7 +1532,7 @@ function generateServiceDigital360Content() {
           <line x1="3" y1="18" x2="21" y2="18"></line>
         </svg>
       </button>
-      <div class="_mobileMenu_vz7lq_84">
+      <div class="_mobileMenu_1baxb_167">
         <a class="" href="/">Home</a><a class="" href="/sobre">Sobre</a
         ><a class="" href="/servicos">Serviços</a
         ><a class="" href="/prw">PRW Embalagens</a
@@ -1518,15 +1542,21 @@ function generateServiceDigital360Content() {
   </header>
   <main style="padding: 20px 0px">
     <main id="services">
-      <div class="_service__item_1gmim_5 container">
-        <img
-          alt="Imagem laser"
-          src="/assets/DIGITAL%20360%C2%B0-5pKiqwhI.jpg"
-        />
-        <div id="digital360" class="_service__item__content_1gmim_18">
-          <div class="_line_1gmim_24"></div>
+      <div class="container">
+        <ul class="_pagePath_1bhp7_69">
+          <li><a href="/">Home</a></li>
+          <li><a href="/servicos">Seriços</a></li>
+          <li>
+            <a href="/gravacao-digital-uv-360">Gravação Digital UV 360</a>
+          </li>
+        </ul>
+      </div>
+      <div class="_service__item_1bhp7_9 container">
+        <img alt="Imagem laser" src="/src/assets/digital360.jpg" />
+        <div id="digital360" class="_service__item__content_1bhp7_35">
+          <div class="_line_1bhp7_47"></div>
           <h1>Gravação Digital UV 360</h1>
-          <p>
+          <h2 class="_h2paragraph_1bhp7_103">
             A gravação digital UV 360 é uma evolução da impressão UV
             tradicional, focada na personalização completa de objetos
             cilíndricos ou curvos, como garrafas e canecas, em toda a sua
@@ -1535,25 +1565,23 @@ function generateServiceDigital360Content() {
             de cores, mas se diferencia por sua capacidade de imprimir em 360
             graus, através da rotação controlada do objeto, permitindo detalhes
             finos e efeitos como relevo em superfícies curvas.
-          </p>
-          <div class="_centerButton_1gmim_30">
-            <a class="_button_1gmim_84" href="/servicos" data-discover="true"
-              >Mais Serviços</a
-            >
+          </h2>
+          <div class="_centerButton_1bhp7_59">
+            <a class="_button_1bhp7_219" href="/servicos">Mais Serviços</a>
           </div>
-          <div class="_line_1gmim_24"></div>
+          <div class="_line_1bhp7_47"></div>
         </div>
       </div>
       <div class="divider-2"></div>
       <section id="contact">
-        <div class="_container__contact_1gmim_37 container">
-          <div class="_contact__text_1gmim_46">
+        <div class="_container__contact_1bhp7_123 container">
+          <div class="_contact__text_1bhp7_141">
             <h2>Entre em Contato</h2>
             <p>
               Entre em contato com a PRM TecPrint, queremos tirar suas dúvidas.
             </p>
             <a
-              class="_button_1gmim_84"
+              class="_button_1bhp7_219"
               href="https://wa.me/5511939006543?text=Ol%C3%A1%2C%20quero%20conhecer%20melhor%20os%20seus%20produtos
         "
               target="_blank"
@@ -1565,7 +1593,7 @@ function generateServiceDigital360Content() {
             >
           </div>
           <div>
-            <ul class="_contact__list_1gmim_62">
+            <ul class="_contact__list_1bhp7_173">
               <li>
                 <a href="tel:11939006543"
                   ><img
@@ -1600,14 +1628,14 @@ function generateServiceDigital360Content() {
     </main>
   </main>
   <footer id="footer">
-    <div class="_footer_ov6ca_8 container">
+    <div class="_footer_3lf4h_15 container">
       <a href="/"
         ><img
-          class="_logo_ov6ca_17"
+          class="_logo_3lf4h_33"
           alt="PRM TECPRINT"
-          src="data:image/png;base64,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"
+          src="/src/assets/LOGOS%20PRM%20PB.png"
       /></a>
-      <div class="_social_ov6ca_33">
+      <div class="_social_3lf4h_65">
         <a
           href="https://www.instagram.com/prm_gravacoes?igsh=MTVwbHYwYWIyemJnMQ=="
           target="_blank"
@@ -1623,34 +1651,32 @@ function generateServiceDigital360Content() {
             src="data:image/svg+xml,%3csvg%20width='39'%20height='39'%20viewBox='0%200%2039%2039'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M26.96%2022.3999C26.64%2022.2399%2024.56%2021.2799%2024.24%2021.1199C23.92%2020.9599%2023.6%2020.9599%2023.28%2021.2799C22.96%2021.5999%2022.32%2022.5599%2022%2022.8799C21.84%2023.1999%2021.52%2023.1999%2021.2%2023.0399C20.08%2022.5599%2018.96%2021.9199%2018%2021.1199C17.2%2020.3199%2016.4%2019.3599%2015.76%2018.3999C15.6%2018.0799%2015.76%2017.7599%2015.92%2017.5999C16.08%2017.4399%2016.24%2017.1199%2016.56%2016.9599C16.72%2016.7999%2016.88%2016.4799%2016.88%2016.3199C17.04%2016.1599%2017.04%2015.8399%2016.88%2015.6799C16.72%2015.5199%2015.92%2013.5999%2015.6%2012.7999C15.44%2011.6799%2015.12%2011.6799%2014.8%2011.6799C14.64%2011.6799%2014.32%2011.6799%2014%2011.6799C13.68%2011.6799%2013.2%2011.9999%2013.04%2012.1599C12.08%2013.1199%2011.6%2014.2399%2011.6%2015.5199C11.76%2016.9599%2012.24%2018.3999%2013.2%2019.6799C14.96%2022.2399%2017.2%2024.3199%2019.92%2025.6C20.72%2025.92%2021.36%2026.24%2022.16%2026.4C22.96%2026.72%2023.76%2026.72%2024.72%2026.56C25.84%2026.4%2026.8%2025.6%2027.44%2024.6399C27.76%2023.9999%2027.76%2023.3599%2027.6%2022.7199C27.6%2022.7199%2027.28%2022.5599%2026.96%2022.3999ZM30.96%207.83992C24.72%201.59991%2014.64%201.59991%208.39997%207.83992C3.27998%2012.9599%202.31998%2020.7999%205.83997%2027.04L3.59998%2035.2L12.08%2032.96C14.48%2034.24%2017.04%2034.88%2019.6%2034.88C28.4%2034.88%2035.4399%2027.84%2035.4399%2019.0399C35.5999%2014.8799%2033.84%2010.8799%2030.96%207.83992ZM26.64%2030.24C24.56%2031.52%2022.16%2032.32%2019.6%2032.32C17.2%2032.32%2014.96%2031.68%2012.88%2030.56L12.4%2030.24L7.43997%2031.52L8.71997%2026.72L8.39997%2026.24C4.55997%2019.8399%206.47997%2011.8399%2012.72%207.83992C18.96%203.83991%2026.96%205.91992%2030.8%2011.9999C34.64%2018.2399%2032.88%2026.4%2026.64%2030.24Z'%20fill='%23F9F9F9'/%3e%3c/svg%3e"
         /></a>
       </div>
-      <div class="_text_ov6ca_23">
+      <div class="_text_3lf4h_45">
         <p>© 2025</p>
         <p>Todos os direitos reservados.</p>
       </div>
     </div>
   </footer>
-</div>
-  `
+</div>`
 }
 
 function generateServiceSilkContent() {
-  return `
-    <div id="root">
-  <header id="header" class="undefined _scroll_vz7lq_63">
-    <nav class="_header_vz7lq_13 container">
+  return `<div id="root">
+  <header id="header" class="undefined">
+    <nav class="_header_1baxb_25 container">
       <a href="/"
         ><img
-          class="_logo_vz7lq_21"
+          class="_logo_1baxb_41"
           alt="PRM TECPRINT"
-          src="data:image/png;base64,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"
+          src="/src/assets/LOGOS%20PRM%20color.png"
       /></a>
-      <div class="_menu_vz7lq_26">
+      <div class="_menu_1baxb_51">
         <a class="" href="/">Home</a><a class="" href="/sobre">Sobre</a
         ><a class="" href="/servicos">Serviços</a
         ><a class="" href="/prw">PRW Embalagens</a
         ><a class="" href="/fale-conosco">Contato</a>
       </div>
-      <button class="_menuToggle_vz7lq_68" aria-label="Toggle menu">
+      <button class="_menuToggle_1baxb_135" aria-label="Toggle menu">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="30"
@@ -1667,7 +1693,7 @@ function generateServiceSilkContent() {
           <line x1="3" y1="18" x2="21" y2="18"></line>
         </svg>
       </button>
-      <div class="_mobileMenu_vz7lq_84">
+      <div class="_mobileMenu_1baxb_167">
         <a class="" href="/">Home</a><a class="" href="/sobre">Sobre</a
         ><a class="" href="/servicos">Serviços</a
         ><a class="" href="/prw">PRW Embalagens</a
@@ -1677,36 +1703,41 @@ function generateServiceSilkContent() {
   </header>
   <main style="padding: 20px 0px">
     <main>
-      <div class="_service__item_1gmim_5 container">
-        <img alt="Imagem Silk" src="/assets/SILK-BRNY2Obw.jpg" />
-        <div id="silk" class="_service__item__content_1gmim_18">
-          <div class="_line_1gmim_24"></div>
+      <div class="container">
+        <ul class="_pagePath_1bhp7_69">
+          <li><a href="/">Home</a></li>
+          <li><a href="/servicos">Seriços</a></li>
+          <li><a href="/silk">Silk Screen</a></li>
+        </ul>
+      </div>
+      <div class="_service__item_1bhp7_9 container">
+        <img alt="Imagem Silk" src="/src/assets/SILK.jpg" />
+        <div id="silk" class="_service__item__content_1bhp7_35">
+          <div class="_line_1bhp7_47"></div>
           <h1>Silk Screen</h1>
-          <p>
+          <h2 class="_h2paragraph_1bhp7_103">
             Um método tradicional e altamente eficaz. Neste processo, a tinta é
             pressionada através de uma tela esticada sobre o objeto, criando um
             design durável e de alta qualidade. Aplicação em camisetas, bonés,
             sacolas e uma variedade de materiais promocionais, a serigrafia é
             particularmente recomendada para grandes tiragens.
-          </p>
-          <div class="_centerButton_1gmim_30">
-            <a class="_button_1gmim_84" href="/servicos" data-discover="true"
-              >Mais Serviços</a
-            >
+          </h2>
+          <div class="_centerButton_1bhp7_59">
+            <a class="_button_1bhp7_219" href="/servicos">Mais Serviços</a>
           </div>
-          <div class="_line_1gmim_24"></div>
+          <div class="_line_1bhp7_47"></div>
         </div>
       </div>
       <div class="divider-2"></div>
       <section id="contact">
-        <div class="_container__contact_1gmim_37 container">
-          <div class="_contact__text_1gmim_46">
+        <div class="_container__contact_1bhp7_123 container">
+          <div class="_contact__text_1bhp7_141">
             <h2>Entre em Contato</h2>
             <p>
               Entre em contato com a PRM TecPrint, queremos tirar suas dúvidas.
             </p>
             <a
-              class="_button_1gmim_84"
+              class="_button_1bhp7_219"
               href="https://wa.me/5511939006543?text=Ol%C3%A1%2C%20quero%20conhecer%20melhor%20os%20seus%20produtos
         "
               target="_blank"
@@ -1718,7 +1749,7 @@ function generateServiceSilkContent() {
             >
           </div>
           <div>
-            <ul class="_contact__list_1gmim_62">
+            <ul class="_contact__list_1bhp7_173">
               <li>
                 <a href="tel:11939006543"
                   ><img
@@ -1753,14 +1784,14 @@ function generateServiceSilkContent() {
     </main>
   </main>
   <footer id="footer">
-    <div class="_footer_ov6ca_8 container">
+    <div class="_footer_3lf4h_15 container">
       <a href="/"
         ><img
-          class="_logo_ov6ca_17"
+          class="_logo_3lf4h_33"
           alt="PRM TECPRINT"
-          src="data:image/png;base64,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"
+          src="/src/assets/LOGOS%20PRM%20PB.png"
       /></a>
-      <div class="_social_ov6ca_33">
+      <div class="_social_3lf4h_65">
         <a
           href="https://www.instagram.com/prm_gravacoes?igsh=MTVwbHYwYWIyemJnMQ=="
           target="_blank"
@@ -1776,34 +1807,32 @@ function generateServiceSilkContent() {
             src="data:image/svg+xml,%3csvg%20width='39'%20height='39'%20viewBox='0%200%2039%2039'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M26.96%2022.3999C26.64%2022.2399%2024.56%2021.2799%2024.24%2021.1199C23.92%2020.9599%2023.6%2020.9599%2023.28%2021.2799C22.96%2021.5999%2022.32%2022.5599%2022%2022.8799C21.84%2023.1999%2021.52%2023.1999%2021.2%2023.0399C20.08%2022.5599%2018.96%2021.9199%2018%2021.1199C17.2%2020.3199%2016.4%2019.3599%2015.76%2018.3999C15.6%2018.0799%2015.76%2017.7599%2015.92%2017.5999C16.08%2017.4399%2016.24%2017.1199%2016.56%2016.9599C16.72%2016.7999%2016.88%2016.4799%2016.88%2016.3199C17.04%2016.1599%2017.04%2015.8399%2016.88%2015.6799C16.72%2015.5199%2015.92%2013.5999%2015.6%2012.7999C15.44%2011.6799%2015.12%2011.6799%2014.8%2011.6799C14.64%2011.6799%2014.32%2011.6799%2014%2011.6799C13.68%2011.6799%2013.2%2011.9999%2013.04%2012.1599C12.08%2013.1199%2011.6%2014.2399%2011.6%2015.5199C11.76%2016.9599%2012.24%2018.3999%2013.2%2019.6799C14.96%2022.2399%2017.2%2024.3199%2019.92%2025.6C20.72%2025.92%2021.36%2026.24%2022.16%2026.4C22.96%2026.72%2023.76%2026.72%2024.72%2026.56C25.84%2026.4%2026.8%2025.6%2027.44%2024.6399C27.76%2023.9999%2027.76%2023.3599%2027.6%2022.7199C27.6%2022.7199%2027.28%2022.5599%2026.96%2022.3999ZM30.96%207.83992C24.72%201.59991%2014.64%201.59991%208.39997%207.83992C3.27998%2012.9599%202.31998%2020.7999%205.83997%2027.04L3.59998%2035.2L12.08%2032.96C14.48%2034.24%2017.04%2034.88%2019.6%2034.88C28.4%2034.88%2035.4399%2027.84%2035.4399%2019.0399C35.5999%2014.8799%2033.84%2010.8799%2030.96%207.83992ZM26.64%2030.24C24.56%2031.52%2022.16%2032.32%2019.6%2032.32C17.2%2032.32%2014.96%2031.68%2012.88%2030.56L12.4%2030.24L7.43997%2031.52L8.71997%2026.72L8.39997%2026.24C4.55997%2019.8399%206.47997%2011.8399%2012.72%207.83992C18.96%203.83991%2026.96%205.91992%2030.8%2011.9999C34.64%2018.2399%2032.88%2026.4%2026.64%2030.24Z'%20fill='%23F9F9F9'/%3e%3c/svg%3e"
         /></a>
       </div>
-      <div class="_text_ov6ca_23">
+      <div class="_text_3lf4h_45">
         <p>© 2025</p>
         <p>Todos os direitos reservados.</p>
       </div>
     </div>
   </footer>
-</div>
-  `
+</div>`
 }
 
 function generateServiceSublimacaoContent() {
-  return `
-    <div id="root">
+  return `<div id="root">
   <header id="header" class="undefined">
-    <nav class="_header_vz7lq_13 container">
+    <nav class="_header_1baxb_25 container">
       <a href="/"
         ><img
-          class="_logo_vz7lq_21"
+          class="_logo_1baxb_41"
           alt="PRM TECPRINT"
-          src="data:image/png;base64,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"
+          src="/src/assets/LOGOS%20PRM%20color.png"
       /></a>
-      <div class="_menu_vz7lq_26">
+      <div class="_menu_1baxb_51">
         <a class="" href="/">Home</a><a class="" href="/sobre">Sobre</a
         ><a class="" href="/servicos">Serviços</a
         ><a class="" href="/prw">PRW Embalagens</a
         ><a class="" href="/fale-conosco">Contato</a>
       </div>
-      <button class="_menuToggle_vz7lq_68" aria-label="Toggle menu">
+      <button class="_menuToggle_1baxb_135" aria-label="Toggle menu">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="30"
@@ -1820,7 +1849,7 @@ function generateServiceSublimacaoContent() {
           <line x1="3" y1="18" x2="21" y2="18"></line>
         </svg>
       </button>
-      <div class="_mobileMenu_vz7lq_84">
+      <div class="_mobileMenu_1baxb_167">
         <a class="" href="/">Home</a><a class="" href="/sobre">Sobre</a
         ><a class="" href="/servicos">Serviços</a
         ><a class="" href="/prw">PRW Embalagens</a
@@ -1830,39 +1859,41 @@ function generateServiceSublimacaoContent() {
   </header>
   <main style="padding: 20px 0px">
     <main>
-      <div class="_service__item_1gmim_5 container">
-        <img
-          alt="Imagem Sublimacao"
-          src="/assets/SUBLIMA%C3%87%C3%83O-B_n2aK7s.jpg"
-        />
-        <div id="sublimacao" class="_service__item__content_1gmim_18">
-          <div class="_line_1gmim_24"></div>
+      <div class="container">
+        <ul class="_pagePath_1bhp7_69">
+          <li><a href="/">Home</a></li>
+          <li><a href="/servicos">Seriços</a></li>
+          <li><a href="/sublimacao">Sublimação</a></li>
+        </ul>
+      </div>
+      <div class="_service__item_1bhp7_9 container">
+        <img alt="Imagem Sublimacao" src="/src/assets/sublimacao.jpg" />
+        <div id="sublimacao" class="_service__item__content_1bhp7_35">
+          <div class="_line_1bhp7_47"></div>
           <h1>Sublimação</h1>
-          <p>
+          <h2 class="_h2paragraph_1bhp7_103">
             Se trata de um processo de transferência de gravação de uma
             superfície para outra, resultando em uma impressão de alta
             qualidade. Amplamente utilizado em canecas de procelana. A
             sublimação oferece uma reprodução nítida de designs complexos e
             detalhados.
-          </p>
-          <div class="_centerButton_1gmim_30">
-            <a class="_button_1gmim_84" href="/servicos" data-discover="true"
-              >Mais Serviços</a
-            >
+          </h2>
+          <div class="_centerButton_1bhp7_59">
+            <a class="_button_1bhp7_219" href="/servicos">Mais Serviços</a>
           </div>
-          <div class="_line_1gmim_24"></div>
+          <div class="_line_1bhp7_47"></div>
         </div>
       </div>
       <div class="divider-2"></div>
       <section id="contact">
-        <div class="_container__contact_1gmim_37 container">
-          <div class="_contact__text_1gmim_46">
+        <div class="_container__contact_1bhp7_123 container">
+          <div class="_contact__text_1bhp7_141">
             <h2>Entre em Contato</h2>
             <p>
               Entre em contato com a PRM TecPrint, queremos tirar suas dúvidas.
             </p>
             <a
-              class="_button_1gmim_84"
+              class="_button_1bhp7_219"
               href="https://wa.me/5511939006543?text=Ol%C3%A1%2C%20quero%20conhecer%20melhor%20os%20seus%20produtos
         "
               target="_blank"
@@ -1874,7 +1905,7 @@ function generateServiceSublimacaoContent() {
             >
           </div>
           <div>
-            <ul class="_contact__list_1gmim_62">
+            <ul class="_contact__list_1bhp7_173">
               <li>
                 <a href="tel:11939006543"
                   ><img
@@ -1909,14 +1940,14 @@ function generateServiceSublimacaoContent() {
     </main>
   </main>
   <footer id="footer">
-    <div class="_footer_ov6ca_8 container">
+    <div class="_footer_3lf4h_15 container">
       <a href="/"
         ><img
-          class="_logo_ov6ca_17"
+          class="_logo_3lf4h_33"
           alt="PRM TECPRINT"
-          src="data:image/png;base64,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"
+          src="/src/assets/LOGOS%20PRM%20PB.png"
       /></a>
-      <div class="_social_ov6ca_33">
+      <div class="_social_3lf4h_65">
         <a
           href="https://www.instagram.com/prm_gravacoes?igsh=MTVwbHYwYWIyemJnMQ=="
           target="_blank"
@@ -1932,34 +1963,32 @@ function generateServiceSublimacaoContent() {
             src="data:image/svg+xml,%3csvg%20width='39'%20height='39'%20viewBox='0%200%2039%2039'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M26.96%2022.3999C26.64%2022.2399%2024.56%2021.2799%2024.24%2021.1199C23.92%2020.9599%2023.6%2020.9599%2023.28%2021.2799C22.96%2021.5999%2022.32%2022.5599%2022%2022.8799C21.84%2023.1999%2021.52%2023.1999%2021.2%2023.0399C20.08%2022.5599%2018.96%2021.9199%2018%2021.1199C17.2%2020.3199%2016.4%2019.3599%2015.76%2018.3999C15.6%2018.0799%2015.76%2017.7599%2015.92%2017.5999C16.08%2017.4399%2016.24%2017.1199%2016.56%2016.9599C16.72%2016.7999%2016.88%2016.4799%2016.88%2016.3199C17.04%2016.1599%2017.04%2015.8399%2016.88%2015.6799C16.72%2015.5199%2015.92%2013.5999%2015.6%2012.7999C15.44%2011.6799%2015.12%2011.6799%2014.8%2011.6799C14.64%2011.6799%2014.32%2011.6799%2014%2011.6799C13.68%2011.6799%2013.2%2011.9999%2013.04%2012.1599C12.08%2013.1199%2011.6%2014.2399%2011.6%2015.5199C11.76%2016.9599%2012.24%2018.3999%2013.2%2019.6799C14.96%2022.2399%2017.2%2024.3199%2019.92%2025.6C20.72%2025.92%2021.36%2026.24%2022.16%2026.4C22.96%2026.72%2023.76%2026.72%2024.72%2026.56C25.84%2026.4%2026.8%2025.6%2027.44%2024.6399C27.76%2023.9999%2027.76%2023.3599%2027.6%2022.7199C27.6%2022.7199%2027.28%2022.5599%2026.96%2022.3999ZM30.96%207.83992C24.72%201.59991%2014.64%201.59991%208.39997%207.83992C3.27998%2012.9599%202.31998%2020.7999%205.83997%2027.04L3.59998%2035.2L12.08%2032.96C14.48%2034.24%2017.04%2034.88%2019.6%2034.88C28.4%2034.88%2035.4399%2027.84%2035.4399%2019.0399C35.5999%2014.8799%2033.84%2010.8799%2030.96%207.83992ZM26.64%2030.24C24.56%2031.52%2022.16%2032.32%2019.6%2032.32C17.2%2032.32%2014.96%2031.68%2012.88%2030.56L12.4%2030.24L7.43997%2031.52L8.71997%2026.72L8.39997%2026.24C4.55997%2019.8399%206.47997%2011.8399%2012.72%207.83992C18.96%203.83991%2026.96%205.91992%2030.8%2011.9999C34.64%2018.2399%2032.88%2026.4%2026.64%2030.24Z'%20fill='%23F9F9F9'/%3e%3c/svg%3e"
         /></a>
       </div>
-      <div class="_text_ov6ca_23">
+      <div class="_text_3lf4h_45">
         <p>© 2025</p>
         <p>Todos os direitos reservados.</p>
       </div>
     </div>
   </footer>
-</div>
-  `
+</div>`
 }
 
 function generateServiceTampografiaContent() {
-  return `
-    <div id="root">
-  <header id="header" class="undefined _scroll_vz7lq_63">
-    <nav class="_header_vz7lq_13 container">
+  return `<div id="root">
+  <header id="header" class="undefined">
+    <nav class="_header_1baxb_25 container">
       <a href="/"
         ><img
-          class="_logo_vz7lq_21"
+          class="_logo_1baxb_41"
           alt="PRM TECPRINT"
-          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASYAAAAoCAYAAABTuVceAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAyESURBVHgB7Z1Pj9vGFcDfULuBW7mt3I2TBihg7i7aa+RbT176E9j+BNbeeuoq9wLWfoKV+wFq+dwAWR97sraX9mbtoQgawDYLG2iR2LGQZBM7WnHy3nCopWSKMyKHFLWeH7C2JFIzlEQ+vv/DXv0J7gQMOpCdIQMYcPxzGNy/1IVBtOGC67k1h3+GD5uQjSH++ZyBz4Afro+dB0O/P4w2vmqDyznQ+A16jsfgzhsIj7HPGNzC4xuCIRqu1xjV8PNx8BS7DtYDdj1+7BaLZT4OXvQtyEcDBYKH/7cDDo++3oOHJDBow2u/7588ObrKgN2FbJDAaTION4Gz3sjhj36+de1OtBGFjH/KYJeHx+CmDUTHGOAxgkF+dII9DaFENE+zC2eL5Z3DAcMIAcDhKWli0WvfPem3UTjtQ35cHKdT39p5StoYvfABamhjBtcBNDQhDnsoNBtgCDyWFlgsFuMYF0wRZB5+/sf37kXPUTh1cmhOs5CJ+Ki+fe02PSHhhPPd0nhfw5TWVN/2WqDQ0iwWSzYKE0zE0Ze/btW3dybCaS0QviwfzNAg8+6i63n05HIX+miWqgWfKa2J8ztgsVgKoTDB9M1oDbpfXCFB0KpvXTug18j5ywK2Cwbh6FyPzLoaCMGnMulya01WW7JYiqUQwURCaf/f2/Ds+wvyFdb+hevdpEff+f0+Omf6YI6GU+NC8ImIWylaE78NFoulMNbAIM9REP39/xvw16e/jQmlkMDhBxhe7wutacz2UdPxwBAUtSOTjoQeStouakQqM4u0phb+34UFqf/Oa8LY3LHrgoLUg+IYRGkUBc0zmJemISO4LpjDp2jtzPgmGSZ9lrLmic3lyqdT36284cYjwIO8KTI4Jo0nbuQ4Vn/OPEZRCqYfGWymbf/z4PfN4+Evb3/+Tf0mpOOOnFAYkABB82sT1AfninQGpqGhOEDz9+lH+HoP/U2guMBQa4IMggmF0h6UDJ2IGOl8CAXhhL+xOHmLmCcIo6b9+Gt0suNcn+GfCwbB84VcBb3Jc/w83LDZ/XIPuht34ZOpeUuahxA3VR7efGe/2zHATbxRT/y6LNx2HXKAn+1AXk8+/kXXbbPIc1IpmD7qqpzVX9D2w7qLfheH30vdlfEbIIUB5TiBGtqHhFgHo3D0JbjzduSheSV8R3hyHqvyi57/cMG96P5BaFmgSejL4i2w5CImaI2lbpRMG4VGA4WGUX9pEfOQQKHUnUt/ARPpOqVhzJQ78fu9+paHJ1ro70mEZ1P9SIihqbbLQ+E0j8a66zVHfl9kobP0IeFvz34DvCYia33QBIXjsiJx5DvTO7E4kIB2WZgxfx/0eEvVF9n8DB6AAdZmIrFBeLcPs/UZHDEw53NEbWIwb5uYi8NTyAEeqyc1oxYK2LvxSoey59GFUndQOPkonHTPBx38Bc5JsjIai5xTRn1MJ0/63frWzuSkS6BBWoemtjQFaTb17Z1+mib0Xg2aI/zwGJ3zA8V4nz77kL4wL/JNKXZfqrYkfQQdnX3RjN2hExpPxv++381eakTCfaObq1RpLoxM9PB/H+fwoARMzfWiLUwlKoMis4lutINlzKMD3ZhYeKMi4dRFAXd0qWsmXUeO09HZF8/J27I6Q/ucMh+V4yxVIq7lsMMZZ8eau/ppG0lbipzzUmtS4jhBrkgcr9n0ghgu/UPCE0rC1Fw1RTpKWfPogIKgF5xpNQ0yn01WPhRJoQmWBWCkCPbT5x+ePZFaU9r+VKxry08sq8hl1FBipnJU9F55zAsmh1+BguCM76RuH08ElztvH3R6wz9fTN80VFrTqCYifi5YLCsIddVg0oqInOFQcYwKJuGHUUTD3mTUenTGduTY45Roz8F/EuSmSmuy5SeWFYZ8lCxW6C6d4ZVOEp4rmFDCDim6AAugEbXyKWoGGajVFKkIILPKIXSuztvnXy+TZdY8rUmz/KQH5moALRbjkLMar+dJTpR0hrtQURIFEznMUMJuvq8ZXSAfDEbjSHC0FLv2YUFIk8Fo3EOVtsRjTneMRNxI2ifu9H57APDqrtdMGFipLY0Dto/S0AeLpcLg9bwyzvCpdAGyQ8ke3YjlTIiLtSaatbmzb+YQ/AoN2OaI80nKehosYJM8injXgblwaHLAsTmo4WG2r0ze85J2mXJ6J1ETWd27Z8eI2hLnbvqboEfpD/h54DxBWid+ly3Ihh+VLliqBTnDZUqJB2fO8FyZ4UUwEUyU/ER2aFRXIy9KvFBDwZAsGxhoCY0QPzK1SAvi3GhOkP+93z+kB+hf8pKSK/G1Q3R6p5fNcGihL2t/kmelqy2dQ+jE5XrdOZPoAVRLMOGN9WMoAYPzFKbJkPKBP/AjHuaTeS/34CCp9GWZCMEUF0qiTzf5c7jZQlW8gCdSmTtmq/PjYzOeHHEYU9cBRj2c0i+2NUeUtbSF8AQ9bQksq0ADL0DKxu5DDgIOk5tbLXksmucRQPZMbc15MkPXOWrD1/HGQ8dJArCNzvCB4czwXJBgIvNtdyKUqOzDcGEltdWNLmDTGdTxscXCCgmOajJRqZHcRZeBqqsB1dyhz6wzIme4Qhs8r9oSIQMfPchArbqBABcgs3k6BTUlTMmiboKhynvFPJmhMV+04ZOo4Jec4V+24fiDbj6Baoq1U/TU48H4E6EExoXSXWqrGz2vpde7LTr2fjS29C11EveTr+uUtSB6K58wdnSetSWq9UL1vgeWKShaTdr35YLKdcqch5zhX+F148jaxRr6m/A6umpyJaGsrEUSsiChtB8XSrKTpQv5wS9OjN2lJ2ltQUhbiquoWr2gNHwrbFzsiWkxC2mAIwPaEsZ0h5dTLlzdeag0y4ktPYZCaHccM9lU85hCOsM/RuNAJBFXxRkufExySSQXzDF0Arb7rXRIn83B2pAXDoMxZ7cm5tuZUHKTd5+2zzW1JhX+Iu1SLNXgo245JqbmPP7LNobuOYhuHKitHKwzoa3ovNco5MoJI+DVcYY7huvAhqQlrQdsMy6USFOiZZfABA4MY0KpkSaUxO4JrRlIa4I8MN4BiyUnG13oxhbQWFpe0WxmOITO8KVmhq+JOrBUZzc7xgvxVdIWHq7COww4H9QC53hWixCRLSb6MyU5AnsorKYqsTkdh6pbJWo6P9vy2j+gGUdfKDrwHrCw30sSvaQ7kNCatnbodRcWxz95/I/KRC8sqw36edrSlPIAhPZP18sulIx0hu9GrVaW7QxfwyjUDZaywziAm6/9Ix8WhDLBeUr0jSJaSc7ji1veEN+X2r7WAX4HnfWH9H5aGQUjcSTM3rrTBKmN0miNu5SmdnPfZrUli1mkKfVw0hgubOpWesQXheQhOsP3Z53hXD9X0RgOy+drSUQup9SCDMi155RLMEW1c6Q1xWuAIig363JK9vF6ICJOizoXrbZkBvG947l3BSzRUve0YOukyJYaxcESkG1SIjfM0tqkkPO7UrUytIpKfcvbV2ozse6TFPaUXfK8aDOe9F3VPKid3UXtTL9zwDukLeHJ2UTnbAcM4MyY1CJHKmyz7KKj9R4YbBiHka3DquTiLAIdc9wZTvlFqK0MquAMhyVgtLWuKUSL3u2dG8rCXYffQ+f9VbEkFH6ZUSbrbIrAPFA7646csB8xqHmntCVOfkFuJknwNFxH0I+eyyW2IvO7BQZNBScspl45wUSQMxw1JVf6TCNneOl5RQmZ4aVT2Q6W47FYsVf1g7gjJxAaj7izyAiH1lLhIFcGFr4mNbifNeEMQb/VGKNAzLaKeQtyhleh46Rsk1K6Ez6ikhoTIVZG0TK1GNW1PSCTbiNMFrsRs5GV6GpNp8FqZEFTgeabHHc51TqCWbiQcIOR5tbm/wz3BJqd6w0rJ1nQ5Dyq35A0ztcsPB9nPy8Ggw5fy5WuL+RsRU3OcPx9cp8P0XezyPEwjJ6lKtIYPdtctPRClrc8zTsu5ViNHE7qpJu2Hy05fvL4SHx4ygNZVPVFAdhRCMDeyZOj1LuHsmcUY7snj/s9sFgsSiq9GAGZWk7A1BmoMreJHmaxx0lrghRpfp6LdS2WKlL5VVJEBjlTt32QuU0uZEDha7KtTSyWklmJ5Zs0S0gaOn3B5zFPa7LaksVSPishmMixrRU9o77d29cy1fhIrWk28ma1JYtlCRQimHS874tGDDQzwilXoAsZOQ2mkzLjPcrzElvzzmKxKHBSNJEhXuT3s2gMMZ9N0sUottE+sADSEU6RMT91R8US5WnQZ6XuCPRYNLhbpLVJOO+cz8SOgxVN+rNYlsFPK4aybqxCJKcAAAAASUVORK5CYII="
+          src="/src/assets/LOGOS%20PRM%20color.png"
       /></a>
-      <div class="_menu_vz7lq_26">
+      <div class="_menu_1baxb_51">
         <a class="" href="/">Home</a><a class="" href="/sobre">Sobre</a
         ><a class="" href="/servicos">Serviços</a
         ><a class="" href="/prw">PRW Embalagens</a
         ><a class="" href="/fale-conosco">Contato</a>
       </div>
-      <button class="_menuToggle_vz7lq_68" aria-label="Toggle menu">
+      <button class="_menuToggle_1baxb_135" aria-label="Toggle menu">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="30"
@@ -1976,7 +2005,7 @@ function generateServiceTampografiaContent() {
           <line x1="3" y1="18" x2="21" y2="18"></line>
         </svg>
       </button>
-      <div class="_mobileMenu_vz7lq_84">
+      <div class="_mobileMenu_1baxb_167">
         <a class="" href="/">Home</a><a class="" href="/sobre">Sobre</a
         ><a class="" href="/servicos">Serviços</a
         ><a class="" href="/prw">PRW Embalagens</a
@@ -1986,37 +2015,42 @@ function generateServiceTampografiaContent() {
   </header>
   <main style="padding: 20px 0px">
     <main>
-      <div class="_service__item_1gmim_5 container">
-        <img alt="Imagem Tampografia" src="/assets/TAMPOGRAFIA-qYbr5PbQ.jpg" />
-        <div id="tampografia" class="_service__item__content_1gmim_18">
-          <div class="_line_1gmim_24"></div>
+      <div class="container">
+        <ul class="_pagePath_1bhp7_69">
+          <li><a href="/">Home</a></li>
+          <li><a href="/servicos">Seriços</a></li>
+          <li><a href="/tampografia">Tampografia</a></li>
+        </ul>
+      </div>
+      <div class="_service__item_1bhp7_9 container">
+        <img alt="Imagem Tampografia" src="/src/assets/TAMPOGRAFIA.jpg" />
+        <div id="tampografia" class="_service__item__content_1bhp7_35">
+          <div class="_line_1bhp7_47"></div>
           <h1>Tampografia</h1>
-          <p>
+          <h2 class="_h2paragraph_1bhp7_103">
             A tinta é transferida de um clichê para o produto através de um
             tampão de silicone, resultando em detalhes nítidos mesmo em
             superfícies irregulares. Amplamente empregada em brindes
             corporativos como canetas, produtos eletrônicos e itens de
             escritório, a Tampografia oferece uma personalização durável e de
             qualidade.
-          </p>
-          <div class="_centerButton_1gmim_30">
-            <a class="_button_1gmim_84" href="/servicos" data-discover="true"
-              >Mais Serviços</a
-            >
+          </h2>
+          <div class="_centerButton_1bhp7_59">
+            <a class="_button_1bhp7_219" href="/servicos">Mais Serviços</a>
           </div>
-          <div class="_line_1gmim_24"></div>
+          <div class="_line_1bhp7_47"></div>
         </div>
       </div>
       <div class="divider-2"></div>
       <section id="contact">
-        <div class="_container__contact_1gmim_37 container">
-          <div class="_contact__text_1gmim_46">
+        <div class="_container__contact_1bhp7_123 container">
+          <div class="_contact__text_1bhp7_141">
             <h2>Entre em Contato</h2>
             <p>
               Entre em contato com a PRM TecPrint, queremos tirar suas dúvidas.
             </p>
             <a
-              class="_button_1gmim_84"
+              class="_button_1bhp7_219"
               href="https://wa.me/5511939006543?text=Ol%C3%A1%2C%20quero%20conhecer%20melhor%20os%20seus%20produtos
         "
               target="_blank"
@@ -2028,7 +2062,7 @@ function generateServiceTampografiaContent() {
             >
           </div>
           <div>
-            <ul class="_contact__list_1gmim_62">
+            <ul class="_contact__list_1bhp7_173">
               <li>
                 <a href="tel:11939006543"
                   ><img
@@ -2063,14 +2097,14 @@ function generateServiceTampografiaContent() {
     </main>
   </main>
   <footer id="footer">
-    <div class="_footer_ov6ca_8 container">
+    <div class="_footer_3lf4h_15 container">
       <a href="/"
         ><img
-          class="_logo_ov6ca_17"
+          class="_logo_3lf4h_33"
           alt="PRM TECPRINT"
-          src="data:image/png;base64,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"
+          src="/src/assets/LOGOS%20PRM%20PB.png"
       /></a>
-      <div class="_social_ov6ca_33">
+      <div class="_social_3lf4h_65">
         <a
           href="https://www.instagram.com/prm_gravacoes?igsh=MTVwbHYwYWIyemJnMQ=="
           target="_blank"
@@ -2086,14 +2120,13 @@ function generateServiceTampografiaContent() {
             src="data:image/svg+xml,%3csvg%20width='39'%20height='39'%20viewBox='0%200%2039%2039'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M26.96%2022.3999C26.64%2022.2399%2024.56%2021.2799%2024.24%2021.1199C23.92%2020.9599%2023.6%2020.9599%2023.28%2021.2799C22.96%2021.5999%2022.32%2022.5599%2022%2022.8799C21.84%2023.1999%2021.52%2023.1999%2021.2%2023.0399C20.08%2022.5599%2018.96%2021.9199%2018%2021.1199C17.2%2020.3199%2016.4%2019.3599%2015.76%2018.3999C15.6%2018.0799%2015.76%2017.7599%2015.92%2017.5999C16.08%2017.4399%2016.24%2017.1199%2016.56%2016.9599C16.72%2016.7999%2016.88%2016.4799%2016.88%2016.3199C17.04%2016.1599%2017.04%2015.8399%2016.88%2015.6799C16.72%2015.5199%2015.92%2013.5999%2015.6%2012.7999C15.44%2011.6799%2015.12%2011.6799%2014.8%2011.6799C14.64%2011.6799%2014.32%2011.6799%2014%2011.6799C13.68%2011.6799%2013.2%2011.9999%2013.04%2012.1599C12.08%2013.1199%2011.6%2014.2399%2011.6%2015.5199C11.76%2016.9599%2012.24%2018.3999%2013.2%2019.6799C14.96%2022.2399%2017.2%2024.3199%2019.92%2025.6C20.72%2025.92%2021.36%2026.24%2022.16%2026.4C22.96%2026.72%2023.76%2026.72%2024.72%2026.56C25.84%2026.4%2026.8%2025.6%2027.44%2024.6399C27.76%2023.9999%2027.76%2023.3599%2027.6%2022.7199C27.6%2022.7199%2027.28%2022.5599%2026.96%2022.3999ZM30.96%207.83992C24.72%201.59991%2014.64%201.59991%208.39997%207.83992C3.27998%2012.9599%202.31998%2020.7999%205.83997%2027.04L3.59998%2035.2L12.08%2032.96C14.48%2034.24%2017.04%2034.88%2019.6%2034.88C28.4%2034.88%2035.4399%2027.84%2035.4399%2019.0399C35.5999%2014.8799%2033.84%2010.8799%2030.96%207.83992ZM26.64%2030.24C24.56%2031.52%2022.16%2032.32%2019.6%2032.32C17.2%2032.32%2014.96%2031.68%2012.88%2030.56L12.4%2030.24L7.43997%2031.52L8.71997%2026.72L8.39997%2026.24C4.55997%2019.8399%206.47997%2011.8399%2012.72%207.83992C18.96%203.83991%2026.96%205.91992%2030.8%2011.9999C34.64%2018.2399%2032.88%2026.4%2026.64%2030.24Z'%20fill='%23F9F9F9'/%3e%3c/svg%3e"
         /></a>
       </div>
-      <div class="_text_ov6ca_23">
+      <div class="_text_3lf4h_45">
         <p>© 2025</p>
         <p>Todos os direitos reservados.</p>
       </div>
     </div>
   </footer>
-</div>
-  `
+</div>`
 }
 
 function generatePrwContent() {
@@ -2380,7 +2413,86 @@ function generateContactContent() {
 }
 
 function generateNotFoundContent() {
-  return ``
+  return `<div id="root">
+  <header id="header" class="undefined">
+    <nav class="_header_1baxb_25 container">
+      <a href="/"
+        ><img
+          class="_logo_1baxb_41"
+          alt="PRM TECPRINT"
+          src="/src/assets/LOGOS%20PRM%20color.png"
+      /></a>
+      <div class="_menu_1baxb_51">
+        <a class="" href="/">Home</a><a class="" href="/sobre">Sobre</a
+        ><a class="" href="/servicos">Serviços</a
+        ><a class="" href="/prw">PRW Embalagens</a
+        ><a class="" href="/fale-conosco">Contato</a>
+      </div>
+      <button class="_menuToggle_1baxb_135" aria-label="Toggle menu">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="30"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+      <div class="_mobileMenu_1baxb_167">
+        <a class="" href="/">Home</a><a class="" href="/sobre">Sobre</a
+        ><a class="" href="/servicos">Serviços</a
+        ><a class="" href="/prw">PRW Embalagens</a
+        ><a class="" href="/fale-conosco">Contato</a>
+      </div>
+    </nav>
+  </header>
+  <main style="padding: 20px 0px">
+    <div class="_container_119wb_1">
+      <h1>404</h1>
+      <h2>Página Não Encontrada</h2>
+      <p>A página que você está procurando não existe ou foi movida.</p>
+      <a class="_button_119wb_55" href="/">Voltar para a Home</a>
+    </div>
+  </main>
+  <footer id="footer">
+    <div class="_footer_3lf4h_15 container">
+      <a href="/"
+        ><img
+          class="_logo_3lf4h_33"
+          alt="PRM TECPRINT"
+          src="/src/assets/LOGOS%20PRM%20PB.png"
+      /></a>
+      <div class="_social_3lf4h_65">
+        <a
+          href="https://www.instagram.com/prm_gravacoes?igsh=MTVwbHYwYWIyemJnMQ=="
+          target="_blank"
+          ><img
+            alt="Logo Instagram"
+            src="data:image/svg+xml,%3csvg%20width='39'%20height='39'%20viewBox='0%200%2039%2039'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M27.1999%203.7998H11.1999C6.78167%203.7998%203.19995%207.38153%203.19995%2011.7998V27.7998C3.19995%2032.2181%206.78167%2035.7999%2011.1999%2035.7999H27.1999C31.6182%2035.7999%2035.1999%2032.2181%2035.1999%2027.7998V11.7998C35.1999%207.38153%2031.6182%203.7998%2027.1999%203.7998Z'%20stroke='%23F9F9F9'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M25.6%2018.7921C25.7975%2020.1236%2025.57%2021.4836%2024.9501%2022.6785C24.3301%2023.8734%2023.3491%2024.8423%2022.1466%2025.4475C20.9442%2026.0528%2019.5816%2026.2634%2018.2525%2026.0496C16.9234%2025.8357%2015.6957%2025.2082%2014.7438%2024.2563C13.7919%2023.3044%2013.1644%2022.0767%2012.9506%2020.7476C12.7367%2019.4185%2012.9473%2018.0559%2013.5526%2016.8534C14.1578%2015.651%2015.1267%2014.67%2016.3216%2014.05C17.5165%2013.43%2018.8764%2013.2026%2020.208%2013.4C21.5663%2013.6015%2022.8238%2014.2344%2023.7947%2015.2053C24.7657%2016.1763%2025.3986%2017.4338%2025.6%2018.7921Z'%20stroke='%23F9F9F9'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M28%2010.9998H28.016'%20stroke='%23F9F9F9'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e" /></a
+        ><a
+          href="https://wa.me/5511939006543?text=Ol%C3%A1%2C%20quero%20conhecer%20melhor%20os%20seus%20produtos
+  "
+          target="_blank"
+          ><img
+            alt="Logo WhatsApp"
+            src="data:image/svg+xml,%3csvg%20width='39'%20height='39'%20viewBox='0%200%2039%2039'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M26.96%2022.3999C26.64%2022.2399%2024.56%2021.2799%2024.24%2021.1199C23.92%2020.9599%2023.6%2020.9599%2023.28%2021.2799C22.96%2021.5999%2022.32%2022.5599%2022%2022.8799C21.84%2023.1999%2021.52%2023.1999%2021.2%2023.0399C20.08%2022.5599%2018.96%2021.9199%2018%2021.1199C17.2%2020.3199%2016.4%2019.3599%2015.76%2018.3999C15.6%2018.0799%2015.76%2017.7599%2015.92%2017.5999C16.08%2017.4399%2016.24%2017.1199%2016.56%2016.9599C16.72%2016.7999%2016.88%2016.4799%2016.88%2016.3199C17.04%2016.1599%2017.04%2015.8399%2016.88%2015.6799C16.72%2015.5199%2015.92%2013.5999%2015.6%2012.7999C15.44%2011.6799%2015.12%2011.6799%2014.8%2011.6799C14.64%2011.6799%2014.32%2011.6799%2014%2011.6799C13.68%2011.6799%2013.2%2011.9999%2013.04%2012.1599C12.08%2013.1199%2011.6%2014.2399%2011.6%2015.5199C11.76%2016.9599%2012.24%2018.3999%2013.2%2019.6799C14.96%2022.2399%2017.2%2024.3199%2019.92%2025.6C20.72%2025.92%2021.36%2026.24%2022.16%2026.4C22.96%2026.72%2023.76%2026.72%2024.72%2026.56C25.84%2026.4%2026.8%2025.6%2027.44%2024.6399C27.76%2023.9999%2027.76%2023.3599%2027.6%2022.7199C27.6%2022.7199%2027.28%2022.5599%2026.96%2022.3999ZM30.96%207.83992C24.72%201.59991%2014.64%201.59991%208.39997%207.83992C3.27998%2012.9599%202.31998%2020.7999%205.83997%2027.04L3.59998%2035.2L12.08%2032.96C14.48%2034.24%2017.04%2034.88%2019.6%2034.88C28.4%2034.88%2035.4399%2027.84%2035.4399%2019.0399C35.5999%2014.8799%2033.84%2010.8799%2030.96%207.83992ZM26.64%2030.24C24.56%2031.52%2022.16%2032.32%2019.6%2032.32C17.2%2032.32%2014.96%2031.68%2012.88%2030.56L12.4%2030.24L7.43997%2031.52L8.71997%2026.72L8.39997%2026.24C4.55997%2019.8399%206.47997%2011.8399%2012.72%207.83992C18.96%203.83991%2026.96%205.91992%2030.8%2011.9999C34.64%2018.2399%2032.88%2026.4%2026.64%2030.24Z'%20fill='%23F9F9F9'/%3e%3c/svg%3e"
+        /></a>
+      </div>
+      <div class="_text_3lf4h_45">
+        <p>© 2025</p>
+        <p>Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+</div>
+`
 }
 
 const routes = [

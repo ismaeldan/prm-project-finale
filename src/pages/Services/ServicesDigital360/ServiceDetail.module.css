@@ -32,6 +32,31 @@ main {
   justify-content: center;
 }
 
+.pagePath li + li::before {
+  content: '>';
+  margin: 0 10px;
+  color: #666;
+}
+
+.pagePath {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--text-color);
+  margin-bottom: 2rem;
+}
+
+.h2paragraph {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
 /* CONTACT */
 
 .container__contact {

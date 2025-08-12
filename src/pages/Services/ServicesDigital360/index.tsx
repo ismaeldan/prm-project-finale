@@ -13,13 +13,26 @@ export function Digital360() {
 
   return (
     <main id="services" className={styles.main}>
+      <div className="container">
+        <ul className={styles.pagePath}>
+          <li>
+            <Link to={'/'}>Home</Link>
+          </li>
+          <li>
+            <Link to={'/servicos'}>Seriços</Link>
+          </li>
+          <li>
+            <Link to={'/gravacao-digital-uv-360'}>Gravação Digital UV 360</Link>
+          </li>
+        </ul>
+      </div>
       <div className={`${styles.service__item} container`}>
         <img src={ImgDigital360} alt="Imagem laser" />
 
         <div id="digital360" className={styles.service__item__content}>
           <div className={styles.line}></div>
           <h1>Gravação Digital UV 360</h1>
-          <p>
+          <h2 className={styles.h2paragraph}>
             A gravação digital UV 360 é uma evolução da impressão UV
             tradicional, focada na personalização completa de objetos
             cilíndricos ou curvos, como garrafas e canecas, em toda a sua
@@ -28,7 +41,7 @@ export function Digital360() {
             de cores, mas se diferencia por sua capacidade de imprimir em 360
             graus, através da rotação controlada do objeto, permitindo detalhes
             finos e efeitos como relevo em superfícies curvas.
-          </p>
+          </h2>
 
           <div className={styles.centerButton}>
             <Link className={styles.button} to="/servicos">

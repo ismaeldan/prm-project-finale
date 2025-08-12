@@ -13,19 +13,32 @@ export function Transfer() {
 
   return (
     <main className={styles.main}>
+      <div className="container">
+        <ul className={styles.pagePath}>
+          <li>
+            <Link to={'/'}>Home</Link>
+          </li>
+          <li>
+            <Link to={'/servicos'}>Seriços</Link>
+          </li>
+          <li>
+            <Link to={'/transfer'}>Transfer</Link>
+          </li>
+        </ul>
+      </div>
       <div className={`${styles.service__item} container`}>
         <img src={ImgTransfer} alt="Imagem laser" />
 
         <div id="digital" className={styles.service__item__content}>
           <div className={styles.line}></div>
           <h1>Transfer</h1>
-          <p>
+          <h2 className={styles.h2paragraph}>
             O design é impresso em um papel especial que posteriormente, é
             transferido para o brinde por meio de calor e pressão. Essa técnica
             oferece uma reprodução precisa de detalhes e cores, sendo ideal para
             designs variados. Ampla aplicação em camisetas, bonés, bolsas e uma
             variedade de produtos promocionais.
-          </p>
+          </h2>
 
           <div className={styles.centerButton}>
             <Link className={styles.button} to="/servicos">
