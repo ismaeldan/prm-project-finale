@@ -7,7 +7,7 @@ const __dirname = path.dirname(__filename)
 
 function generateHomeContent() {
   return `<div id="root">
-  <header id="header" class="undefined">
+  <header id="header" class="undefined _scroll_1baxb_125">
     <nav class="_header_1baxb_25 container">
       <a href="/"
         ><img
@@ -16,8 +16,7 @@ function generateHomeContent() {
           src="data:image/png;base64,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"
       /></a>
       <div class="_menu_1baxb_51">
-        <a class="_active_1baxb_85" href="/">Home</a
-        ><a class="" href="/sobre">Sobre</a
+        <a class="" href="/">Home</a><a class="" href="/sobre">Sobre</a
         ><a class="" href="/servicos">Serviços</a
         ><a class="" href="/prw">PRW Embalagens</a
         ><a class="" href="/fale-conosco">Contato</a>
@@ -40,8 +39,7 @@ function generateHomeContent() {
         </svg>
       </button>
       <div class="_mobileMenu_1baxb_167">
-        <a class="_active_1baxb_85" href="/">Home</a
-        ><a class="" href="/sobre">Sobre</a
+        <a class="" href="/">Home</a><a class="" href="/sobre">Sobre</a
         ><a class="" href="/servicos">Serviços</a
         ><a class="" href="/prw">PRW Embalagens</a
         ><a class="" href="/fale-conosco">Contato</a>
@@ -107,7 +105,7 @@ function generateHomeContent() {
                 durabilidade.
               </p></a
             ><a class="_service__card_fcl6o_209" href="/servicos"
-              ><img alt="Icon-Laser" src="/assets/laserIcon-BBx2ghOB.svg" />
+              ><img alt="Icon-Laser" src="/assets/laserIcon-B6kx76oo.webp" />
               <h3>Laser</h3>
               <p>
                 A gravação a laser utiliza um feixe de alta precisão para
