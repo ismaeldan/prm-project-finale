@@ -40,7 +40,7 @@ export function Home() {
       <section id="services">
         <div className={`${styles.container__services} container`}>
           <div className={styles.services__title}>
-            <Link to="/services/#home_services">
+            <Link to="/servicos">
               <h2>Serviços</h2>
             </Link>
             <p>
