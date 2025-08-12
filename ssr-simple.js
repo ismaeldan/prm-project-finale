@@ -107,7 +107,7 @@ function generateHomeContent() {
                 durabilidade.
               </p></a
             ><a class="_service__card_fcl6o_209" href="/servicos"
-              ><img alt="Icon-Laser" src="/assets/Laser-Icon-BBx2ghOB.svg" />
+              ><img alt="Icon-Laser" src="/assets/laserIcon-BBx2ghOB.svg" />
               <h3>Laser</h3>
               <p>
                 A gravação a laser utiliza um feixe de alta precisão para
@@ -914,7 +914,7 @@ function generateServiceDTFContent() {
         <ul class="_pagePath_1bhp7_69">
           <li><a href="/">Home</a></li>
           <li><a href="/servicos">Seriços</a></li>
-          <li><a href="/DTF">DTF</a></li>
+          <li><a href="/dtf">DTF</a></li>
         </ul>
       </div>
       <div class="_service__item_1bhp7_9 container">

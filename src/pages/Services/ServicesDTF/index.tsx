@@ -22,7 +22,7 @@ export function DTF() {
             <Link to={'/servicos'}>Seriços</Link>
           </li>
           <li>
-            <Link to={'/DTF'}>DTF</Link>
+            <Link to={'/dtf'}>DTF</Link>
           </li>
         </ul>
       </div>
