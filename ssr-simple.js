@@ -2322,9 +2322,9 @@ function generateContactContent() {
         <div class="_container__contact_9ynni_24 container">
           <div class="_contact__text_9ynni_33">
             <h1>Entre em Contato</h1>
-            <p>
+            <h2>
               Entre em contato com a PRM TecPrint, queremos tirar suas dúvidas.
-            </p>
+            </h2>
             <a
               class="_button_9ynni_1"
               href="https://wa.me/5511939006543?text=Ol%C3%A1%2C%20quero%20conhecer%20melhor%20os%20seus%20produtos"
