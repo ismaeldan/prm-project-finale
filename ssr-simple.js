@@ -942,7 +942,7 @@ function generateServiceDTFContent() {
       <section id="contact">
         <div class="_container__contact_1bhp7_123 container">
           <div class="_contact__text_1bhp7_141">
-            <h1>Entre em Contato</h1>
+            <h2>Entre em Contato</h2>
             <p>
               Entre em contato com a PRM TecPrint, queremos tirar suas dúvidas.
             </p>
