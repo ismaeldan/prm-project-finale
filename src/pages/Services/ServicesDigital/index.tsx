@@ -9,7 +9,7 @@ import { HashLink as Link } from 'react-router-hash-link'
 import { useDocumentTitle } from '../../../hooks/useDocumentTitle'
 
 export function Digital() {
-  useDocumentTitle('Digital')
+  useDocumentTitle('Gravação Digital UV')
 
   return (
     <main className={styles.main}>
