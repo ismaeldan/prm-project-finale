@@ -15,7 +15,7 @@ export function Contato() {
         <div className={`${styles.container__contact} container`}>
           <div className={styles.contact__text}>
             <h1>Entre em Contato</h1>
-            <h2>
+            <h2 className={styles.h2paragraph}>
               Entre em contato com a PRM TecPrint, queremos tirar suas dúvidas.
             </h2>
             <Link

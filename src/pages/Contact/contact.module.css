@@ -19,6 +19,14 @@
   background: #617fbf;
 }
 
+.h2paragraph {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
 /* CONTACT */
 
 .container__contact {
