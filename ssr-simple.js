@@ -256,7 +256,7 @@ function generateAboutContent() {
             <img alt="Trocar o Placehold" src="/assets/alboult-fdzoQ3Q3.webp" />
           </div>
           <div class="_text__about_f0fuq_55">
-            <h2>Sobre Nós</h2>
+            <h1>Sobre Nós</h1>
             <p>
               Somos uma empresa especializada na comercialização e
               personalização de produtos promocionais. Nossa equipe é
@@ -2176,7 +2176,7 @@ function generatePrwContent() {
             <img alt="Logo da PRW" src="/assets/LOGO%20PRW-Bl6VBmq3.svg" />
           </div>
           <div class="_text__prw_ky6bu_49">
-            <h2>Sua Marca, Nossa Arte PRW Embalagens</h2>
+            <h1>Sua Marca, Nossa Arte PRW Embalagens</h1>
             <p>
               Transforme seus produtos com embalagens de papel personalizadas
               que refletem a essência da sua marca e encantam seus clientes.
@@ -2321,7 +2321,7 @@ function generateContactContent() {
       <section id="contact" class="container">
         <div class="_container__contact_9ynni_24 container">
           <div class="_contact__text_9ynni_33">
-            <h2>Entre em Contato</h2>
+            <h1>Entre em Contato</h1>
             <p>
               Entre em contato com a PRM TecPrint, queremos tirar suas dúvidas.
             </p>

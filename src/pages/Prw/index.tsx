@@ -18,7 +18,7 @@ export function PRW() {
             <img src={PRW_Logo} alt="Logo da PRW" />
           </div>
           <div className={styles.text__prw}>
-            <h2>Sua Marca, Nossa Arte PRW Embalagens</h2>
+            <h1>Sua Marca, Nossa Arte PRW Embalagens</h1>
             <p>
               Transforme seus produtos com embalagens de papel personalizadas
               que refletem a essência da sua marca e encantam seus clientes.

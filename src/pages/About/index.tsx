@@ -20,7 +20,7 @@ export function About() {
           </div>
 
           <div className={styles.text__about}>
-            <h2>Sobre Nós</h2>
+            <h1>Sobre Nós</h1>
             <p>
               Somos uma empresa especializada na comercialização e
               personalização de produtos promocionais. Nossa equipe é
