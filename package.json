@@ -5,14 +5,13 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
-    "build:ssr": "npm run build && node ssr-simple.js",
-    "prerender": "node ssr-simple.js",
+    "build:client": "tsc -b && vite build --outDir dist/client",
+    "build:server": "vite build --ssr src/entry-server.tsx --outDir dist/server",
+    "build:prerender": "node prerender.js",
+    "build": "npm run build:client && npm run build:server && npm run build:prerender",
     "lint": "eslint .",
     "preview": "vite preview",
-    "preview:ssr": "serve dist -l 3000",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "predeploy": "npm run build"
   },
   "dependencies": {
     "react": "^19.1.0",
@@ -29,12 +28,10 @@
     "eslint": "^9.25.0",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.19",
-    "gh-pages": "^6.3.0",
     "globals": "^16.0.0",
     "serve": "^14.2.4",
     "typescript": "~5.8.3",
     "typescript-eslint": "^8.30.1",
-    "vite": "^6.3.5",
-    "vite-react-ssg": "^0.8.8"
+    "vite": "^6.3.5"
   }
 }
