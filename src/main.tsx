@@ -1,14 +1,15 @@
+// src/main.tsx
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
-import { BrowserRouter } from 'react-router-dom'
-import { MainRoutes } from './routes'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import routes from './routes.jsx'
+
+const router = createBrowserRouter(routes)
 
 ReactDOM.hydrateRoot(
   document.getElementById('root')!,
   <React.StrictMode>
-    <BrowserRouter>
-      <MainRoutes />
-    </BrowserRouter>
+    <RouterProvider router={router} />
   </React.StrictMode>
 )

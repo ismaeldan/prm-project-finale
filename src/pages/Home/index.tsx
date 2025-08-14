@@ -8,7 +8,7 @@ import Email_Icon from '../../assets/email.svg'
 import Phone_Icon from '../../assets/phone.svg'
 import { HashLink as Link } from 'react-router-hash-link'
 import ImgPresentation from '../../assets/APRESENTACAO.webp'
-import { useDocumentTitle } from '../../hooks/useDocumentTitle'
+import { useDocumentTitle } from '../../hooks/useDocumentTitle.js'
 
 export function Home() {
   useDocumentTitle('Home')

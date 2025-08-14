@@ -4,12 +4,14 @@
     "target": "ES2020",
     "useDefineForClassFields": true,
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
-    "module": "ESNext",
     "skipLibCheck": true,
 
-    /* Bundler mode */
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
+    /* === CONFIGURAÇÃO CORRIGIDA === */
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    /* ============================== */
+
+    "allowImportingTsExtensions": false, // Alterado para false, pois agora usamos .jsx/.js
     "verbatimModuleSyntax": true,
     "moduleDetection": "force",
     "noEmit": true,
@@ -19,9 +21,9 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+
+    "allowJs": true
   },
   "include": ["src"]
 }

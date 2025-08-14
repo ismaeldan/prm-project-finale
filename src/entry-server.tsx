@@ -1,11 +1,27 @@
+// src/entry-server.tsx
 import ReactDOMServer from 'react-dom/server'
-import { StaticRouter } from 'react-router-dom/server'
-import { MainRoutes } from './routes'
+import {
+  createStaticHandler,
+  createStaticRouter,
+  StaticRouterProvider
+} from 'react-router-dom/server.mjs' // <--- A CORREÇÃO CRÍTICA ESTÁ AQUI
+import routes from './routes.jsx'
 
-export function render(url: string) {
+export async function render(requestUrl: string) {
+  const handler = createStaticHandler(routes)
+
+  // É necessário criar um objeto Request real para a nova API
+  const fetchRequest = new Request(`http://localhost${requestUrl}`)
+
+  const context = await handler.query(fetchRequest)
+
+  if (context instanceof Response) {
+    throw context
+  }
+
+  const router = createStaticRouter(handler.dataRoutes, context)
+
   return ReactDOMServer.renderToString(
-    <StaticRouter location={url}>
-      <MainRoutes />
-    </StaticRouter>
+    <StaticRouterProvider router={router} context={context} />
   )
 }

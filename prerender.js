@@ -6,44 +6,66 @@ import { fileURLToPath } from 'node:url'
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const toAbsolute = p => path.resolve(__dirname, p)
 
-// Importa o manifest gerado pelo Vite
-const manifest = JSON.parse(
-  fs.readFileSync(toAbsolute('dist/client/.vite/ssr-manifest.json'), 'utf-8')
-)
+try {
+  const manifest = JSON.parse(
+    fs.readFileSync(toAbsolute('dist/client/.vite/ssr-manifest.json'), 'utf-8')
+  )
 
-// Importa o template HTML principal
-const template = fs.readFileSync(toAbsolute('dist/client/index.html'), 'utf-8')
+  const template = fs.readFileSync(
+    toAbsolute('dist/client/index.html'),
+    'utf-8'
+  )
+  const { render } = await import('./dist/server/entry-server.js')
 
-// Importa a função de renderização do build do servidor
-const { render } = await import('./dist/server/entry-server.js')
+  const routesToPrerender = [
+    '/',
+    '/sobre',
+    '/servicos',
+    '/gravacao-em-baixo-relevo',
+    '/dtf',
+    '/gravacao-a-laser',
+    '/transfer',
+    '/gravacao-digital-uv',
+    '/gravacao-digital-uv-360',
+    '/silk',
+    '/sublimacao',
+    '/tampografia',
+    '/prw',
+    '/fale-conosco'
+  ]
 
-// Rotas que você quer pré-renderizar
-const routesToPrerender = [
-  '/',
-  '/sobre',
-  '/servicos',
-  '/gravacao-em-baixo-relevo',
-  '/dtf',
-  '/gravacao-a-laser',
-  '/transfer',
-  '/gravacao-digital-uv',
-  '/gravacao-digital-uv-360',
-  '/silk',
-  '/sublimacao',
-  '/tampografia',
-  '/prw',
-  '/fale-conosco'
-]
+  console.log('Starting pre-rendering...')
 
-// Executa a pré-renderização
-;(async () => {
   for (const url of routesToPrerender) {
-    const appHtml = render(url, manifest)
+    try {
+      const appHtml = await render(url, manifest)
+      const html = template.replace(``, appHtml)
 
-    const html = template.replace(``, appHtml)
+      let filePath
+      if (url === '/') {
+        filePath = `dist/client/index.html`
+      } else {
+        // Cria arquivos como /sobre.html, /servicos.html, etc.
+        filePath = `dist/client${url.replace(/\/$/, '')}.html`
+      }
 
-    const filePath = `dist/client${url === '/' ? '/index' : url}.html`
-    fs.writeFileSync(toAbsolute(filePath), html)
-    console.log('pre-rendered:', filePath)
+      const dir = path.dirname(toAbsolute(filePath))
+      if (!fs.existsSync(dir)) {
+        fs.mkdirSync(dir, { recursive: true })
+      }
+
+      fs.writeFileSync(toAbsolute(filePath), html)
+      console.log(`✅ Pre-rendered: ${filePath}`)
+    } catch (error) {
+      // Se uma rota específica falhar, mostrará o erro e continuará com as outras
+      console.error(`❌ Failed to pre-render ${url}:`, error)
+    }
   }
-})()
+
+  console.log('Pre-rendering finished.')
+} catch (error) {
+  console.error(
+    '🚨 A critical error occurred during the pre-render setup:',
+    error
+  )
+}

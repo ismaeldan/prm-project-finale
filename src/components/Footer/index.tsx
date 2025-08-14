@@ -4,7 +4,6 @@ import insta from '../../assets/instagram.svg'
 import whats from '../../assets/whatsapp.svg'
 
 export function Footer() {
-  console.log('Renderizando Footer...')
   return (
     <footer id="footer">
       <div className={`${styles.footer} container`}>
