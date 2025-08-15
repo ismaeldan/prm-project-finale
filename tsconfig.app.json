@@ -5,26 +5,20 @@
     "useDefineForClassFields": true,
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "skipLibCheck": true,
-
-    /* === CONFIGURAÇÃO CORRIGIDA === */
     "module": "ESNext",
     "moduleResolution": "bundler",
-    /* ============================== */
-
-    "allowImportingTsExtensions": false, // Alterado para false, pois agora usamos .jsx/.js
-    "verbatimModuleSyntax": true,
+    "allowImportingTsExtensions": false,
+    "verbatimModuleSyntax": false,
     "moduleDetection": "force",
     "noEmit": true,
     "jsx": "react-jsx",
-
-    /* Linting */
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-
-    "allowJs": true
+    "allowJs": true,
+    "resolveJsonModule": true
   },
-  "include": ["src"],
-  "exclude": ["src/entry-server.tsx"]
+  "include": ["src/**/*"],
+  "exclude": []
 }

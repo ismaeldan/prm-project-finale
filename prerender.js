@@ -6,6 +6,25 @@ import { fileURLToPath } from 'node:url'
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const toAbsolute = p => path.resolve(__dirname, p)
 
+const requiredFiles = [
+  'dist/client/.vite/ssr-manifest.json',
+  'dist/client/index.html',
+  'dist/server/entry-server.js'
+]
+
+console.log('Verificando arquivos necessários...')
+for (const file of requiredFiles) {
+  const filePath = toAbsolute(file)
+  if (!fs.existsSync(filePath)) {
+    console.error(`❌ Arquivo não encontrado: ${file}`)
+    console.error(
+      'Execute primeiro: npm run build:client && npm run build:server'
+    )
+    process.exit(1)
+  }
+  console.log(`✅ ${file}`)
+}
+
 try {
   const manifest = JSON.parse(
     fs.readFileSync(toAbsolute('dist/client/.vite/ssr-manifest.json'), 'utf-8')

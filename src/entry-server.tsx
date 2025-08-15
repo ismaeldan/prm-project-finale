@@ -1,27 +1,15 @@
 // src/entry-server.tsx
 import ReactDOMServer from 'react-dom/server'
-import {
-  createStaticHandler,
-  createStaticRouter,
-  StaticRouterProvider
-} from 'react-router-dom/server' // <--- A CORREÇÃO CRÍTICA ESTÁ AQUI
-import routes from './routes.jsx'
+import { StaticRouter } from 'react-router-dom/server'
+import { createMemoryRouter, RouterProvider } from 'react-router-dom'
+import routes from './routes'
 
 export async function render(requestUrl: string) {
-  const handler = createStaticHandler(routes)
+  // Criar router em memória para SSR
+  const router = createMemoryRouter(routes, {
+    initialEntries: [requestUrl],
+    initialIndex: 0
+  })
 
-  // É necessário criar um objeto Request real para a nova API
-  const fetchRequest = new Request(`http://localhost${requestUrl}`)
-
-  const context = await handler.query(fetchRequest)
-
-  if (context instanceof Response) {
-    throw context
-  }
-
-  const router = createStaticRouter(handler.dataRoutes, context)
-
-  return ReactDOMServer.renderToString(
-    <StaticRouterProvider router={router} context={context} />
-  )
+  return ReactDOMServer.renderToString(<RouterProvider router={router} />)
 }
