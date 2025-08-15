@@ -7,8 +7,8 @@
     "skipLibCheck": true,
 
     /* === CONFIGURAÇÃO CORRIGIDA === */
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
     /* ============================== */
 
     "allowImportingTsExtensions": false, // Alterado para false, pois agora usamos .jsx/.js
@@ -25,5 +25,6 @@
 
     "allowJs": true
   },
-  "include": ["src"]
+  "include": ["src"],
+  "exclude": ["src/entry-server.tsx"]
 }

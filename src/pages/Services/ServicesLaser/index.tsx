@@ -6,7 +6,7 @@ import Map_Icon from '../../../assets/map.svg'
 import Email_Icon from '../../../assets/email.svg'
 import Phone_Icon from '../../../assets/phone.svg'
 import { HashLink as Link } from 'react-router-hash-link'
-import { useDocumentTitle } from '../../../hooks/useDocumentTitle'
+import { useDocumentTitle } from '../../../hooks/useDocumentTitle.js'
 
 export function Laser() {
   useDocumentTitle('Gravação a Laser')

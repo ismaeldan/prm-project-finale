@@ -4,7 +4,7 @@ import {
   createStaticHandler,
   createStaticRouter,
   StaticRouterProvider
-} from 'react-router-dom/server.mjs' // <--- A CORREÇÃO CRÍTICA ESTÁ AQUI
+} from 'react-router-dom/server' // <--- A CORREÇÃO CRÍTICA ESTÁ AQUI
 import routes from './routes.jsx'
 
 export async function render(requestUrl: string) {
