@@ -1,5 +1,4 @@
 // src/routes.ts
-import { RouteObject } from 'react-router-dom'
 import { LayoutWithHeader } from './LayoutWithHeader'
 import { Home } from './pages/Home/index'
 import { About } from './pages/About/index'
@@ -18,7 +17,7 @@ import { Contato } from './pages/Contact/index'
 import { NotFound } from './pages/NotFound/index'
 import { ScrollToTop } from './components/ScrollToTop/index'
 
-const routes: RouteObject[] = [
+const routes = [
   {
     path: '/',
     element: (
