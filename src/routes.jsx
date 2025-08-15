@@ -17,6 +17,8 @@ import { Contato } from './pages/Contact/index'
 import { NotFound } from './pages/NotFound/index'
 import { ScrollToTop } from './components/ScrollToTop/index'
 
+import React from 'react'
+
 const routes = [
   {
     path: '/',
