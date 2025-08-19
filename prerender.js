@@ -64,7 +64,6 @@ try {
       if (url === '/') {
         filePath = `dist/client/index.html`
       } else {
-        // Cria arquivos como /sobre.html, /servicos.html, etc.
         filePath = `dist/client${url.replace(/\/$/, '')}.html`
       }
 
@@ -73,18 +72,39 @@ try {
         fs.mkdirSync(dir, { recursive: true })
       }
 
-      fs.writeFileSync(toAbsolute(filePath), html)
+      fs.writeFileSync(toAbsolute(filePath), html, 'utf-8')
       console.log(`✅ Pre-rendered: ${filePath}`)
     } catch (error) {
-      // Se uma rota específica falhar, mostrará o erro e continuará com as outras
       console.error(`❌ Failed to pre-render ${url}:`, error)
     }
   }
 
   console.log('Pre-rendering finished.')
+
+  console.log('Cleaning up dist folder for deployment...')
+
+  const clientDir = toAbsolute('dist/client')
+  const serverDir = toAbsolute('dist/server')
+
+  // Move todos os arquivos e pastas de dist/client para a raiz de dist
+  const clientFiles = fs.readdirSync(clientDir)
+  for (const file of clientFiles) {
+    fs.renameSync(
+      path.join(clientDir, file),
+      path.join(toAbsolute('dist'), file)
+    )
+  }
+
+  // --- CORREÇÃO AQUI ---
+  // Usa um método mais robusto para apagar as pastas e seu conteúdo
+  fs.rmSync(clientDir, { recursive: true, force: true })
+  fs.rmSync(serverDir, { recursive: true, force: true })
+
+  console.log('✅ Cleanup complete. Ready for deployment!')
 } catch (error) {
+  // Adicionado um log mais detalhado para o erro de limpeza
   console.error(
-    '🚨 A critical error occurred during the pre-render setup:',
+    '🚨 A critical error occurred during the pre-render or cleanup setup:',
     error
   )
 }
